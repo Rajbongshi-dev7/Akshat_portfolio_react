@@ -12,7 +12,6 @@ This project serves as a technical laboratory for the following technologies:
 
 * **Core:** React.js + Vite
 * **Styling:** Tailwind CSS (Utility-first architecture)
-* **Animation:** Framer Motion
 * **Deployment:** Vercel
 
 ## 🏗️ Architectural Features
