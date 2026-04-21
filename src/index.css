@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme {
+  /* Creating custom font classes */
+  --font-brand: "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-tech: "Geist Mono", monospace;
+}
+* {
+  /* margin: 0px;
+  padding: 0px; */
+  box-sizing: border-box;
+}

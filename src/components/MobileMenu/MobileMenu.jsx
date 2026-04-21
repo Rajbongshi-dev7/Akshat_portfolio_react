@@ -1,0 +1,41 @@
+import React from "react";
+import { Link } from "react-scroll";
+
+const MobileMenu = () => {
+  return (
+    <>
+      {/* links for small device */}
+      <div className="md:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-[90%] max-w-100 h-14 bg-[#131314]/90 backdrop-blur-xl border border-white/10 rounded-2xl flex items-center justify-around px-4 z-50 shadow-2xl">
+        <Link
+          to="builds"
+          smooth={true}
+          spy={true}
+          activeClass="text-blue-300"
+          className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
+        >
+          builds
+        </Link>
+        <Link
+          to="stack"
+          smooth={true}
+          spy={true}
+          activeClass="text-blue-300"
+          className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
+        >
+          stack
+        </Link>
+        <Link
+          to="proof"
+          smooth={true}
+          spy={true}
+          activeClass="text-blue-300"
+          className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
+        >
+          proof
+        </Link>
+      </div>
+    </>
+  );
+};
+
+export default MobileMenu;
