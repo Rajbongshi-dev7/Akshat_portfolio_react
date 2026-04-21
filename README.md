@@ -27,4 +27,4 @@ To run this project locally for architectural review:
 
 1. Clone the repository:
    ```bash
-  
+  https://github.com/Rajbongshi-dev7/Akshat_portfolio_react.git
