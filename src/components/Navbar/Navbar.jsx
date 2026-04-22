@@ -35,10 +35,10 @@ const Navbar = () => {
                 /stack
               </Link>
               <Link
-                to="projects"
+                to="builds"
                 smooth={true}
                 spy={true}
-                activeClass="text-white drop-shadow-glow" // This replaces your 'active' logic!
+                activeClass="!text-white !drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400 cursor-pointer hover:text-blue-300 transition-all"
               >
                 /builds

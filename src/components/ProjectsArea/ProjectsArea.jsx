@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const ProjectsArea = () => {
   return (
-    <div>
-      <section id="builds" className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
+    <div id="builds" className="bg-[#1D2132]">
+      <section className="py-20 px-6 md:px-20 max-w-7xl mx-auto">
         {/* Section Anchor (The line we discussed) */}
         <div className="w-full mb-12 flex items-center gap-6">
           <div className="flex items-center gap-2">
@@ -12,18 +12,18 @@ const ProjectsArea = () => {
               Featured_Builds_v1.0
             </span>
           </div>
-          <div className="h-[1px] flex-1 bg-white/5"></div>
+          <div className="h-px flex-1 bg-white/5"></div>
         </div>
 
         {/* The Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           {/* 01. THE FLAGSHIP PROJECT (Large Card) */}
-          <div className="md:col-span-8 group relative bg-[#1c1c1e]/40 border border-white/5 rounded-[2rem] overflow-hidden hover:border-blue-500/30 transition-all duration-700">
+          <div className="md:col-span-8 group relative bg-[#1c1c1e]/40 border border-white/5 rounded-4xl overflow-hidden hover:border-blue-500/30 transition-all duration-700">
             {/* Visual Header */}
             <div className="h-64 md:h-80 bg-[#0f0f11] relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
               {/* Project Image Placeholder */}
-              <div className="absolute bottom-[-10%] right-[-5%] w-4/5 h-4/5 bg-white/5 rounded-tl-2xl border-t border-l border-white/10 group-hover:translate-y-[-10px] transition-transform duration-700">
+              <div className="absolute bottom-[-10%] right-[-5%] w-4/5 h-4/5 bg-white/5 rounded-tl-2xl border-t border-l border-white/10 group-hover:-translate-y-2.5 transition-transform duration-700">
                 <div className="p-4 font-tech text-[10px] text-gray-700 uppercase">
                   System_Preview.png
                 </div>
@@ -92,6 +92,6 @@ const ProjectsArea = () => {
       </section>
     </div>
   );
-}
+};
 
-export default ProjectsArea
+export default ProjectsArea;

@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import HeroArea from "./components/Heroarea/HeroArea";
 import MobileMenu from "./components/MobileMenu/MobileMenu";
