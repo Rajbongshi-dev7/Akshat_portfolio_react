@@ -28,6 +28,7 @@ const Navbar = () => {
               <Link
                 to="hero"
                 smooth={true}
+                offset={-200}
                 spy={true}
                 activeClass="text-white drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400 cursor-pointer hover:text-blue-300 transition-all"
@@ -38,8 +39,9 @@ const Navbar = () => {
                 to="builds"
                 smooth={true}
                 spy={true}
+                offset={-200}
                 activeClass="!text-white !drop-shadow-glow" // This replaces your 'active' logic!
-                className="font-tech text-gray-400 cursor-pointer hover:text-blue-300 transition-all"
+                className="font-tech text-gray-400  cursor-pointer hover:text-blue-300 transition-all"
               >
                 /builds
               </Link>
@@ -47,6 +49,7 @@ const Navbar = () => {
                 to="experieces"
                 smooth={true}
                 spy={true}
+                offset={-200}
                 activeClass="text-white drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400 cursor-pointer hover:text-blue-300 transition-all"
               >
