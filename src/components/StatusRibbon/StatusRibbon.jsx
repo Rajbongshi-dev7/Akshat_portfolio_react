@@ -2,7 +2,7 @@ import React from "react";
 
 const StatusRibbon = () => {
   return (
-    <div className="bg-[#292936] w-full pb-8 px-16 md:px-24 lg:px-30">
+    <div className="bg-[#292936] w-full pb-12 px-16 md:px-24 lg:px-30">
       <div className="flex items-center max-w-7xl mx-auto gap-4 px-6 py-8">
         <div className="h-px flex-1 bg-white/10"></div>
         <span className="font-tech text-[10px] text-gray-400 uppercase tracking-[0.3em]">
