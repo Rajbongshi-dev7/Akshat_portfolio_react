@@ -2,7 +2,7 @@ import React from "react";
 
 const StatusRibbon = () => {
   return (
-    <div className="bg-[#1D2132] w-full px-16 md:px-24 lg:px-30">
+    <div className="bg-[#292936] w-full pb-8 px-16 md:px-24 lg:px-30">
       <div className="flex items-center max-w-7xl mx-auto gap-4 px-6 py-8">
         <div className="h-px flex-1 bg-white/10"></div>
         <span className="font-tech text-[10px] text-gray-400 uppercase tracking-[0.3em]">
@@ -14,7 +14,7 @@ const StatusRibbon = () => {
       <div className=" max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* 1. Hours Coded (The "Grind" Stat) */}
-          <div className="bg-[#1c1c1e]/40 border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group">
+          <div className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group">
             <span className="font-tech text-blue-500 text-[10px] uppercase tracking-widest mb-2">
               Total Focus
             </span>
@@ -30,7 +30,7 @@ const StatusRibbon = () => {
           </div>
 
           {/* 2. Projects Completed (The "Output" Stat) */}
-          <div className="bg-[#1c1c1e]/40 border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all">
+          <div className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all">
             <span className="font-tech text-blue-500 text-[10px] uppercase tracking-widest mb-2">
               Deployments
             </span>
@@ -48,7 +48,7 @@ const StatusRibbon = () => {
           </div>
 
           {/* 3. GitHub Contributions (The "Consistency" Stat) */}
-          <div className="bg-[#1c1c1e]/40 border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-green-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all">
+          <div className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-green-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all">
             <span className="font-tech text-green-500 text-[10px] uppercase tracking-widest mb-2">
               Git Activity
             </span>
@@ -71,7 +71,7 @@ const StatusRibbon = () => {
           </div>
 
           {/* 4. Active Node (The "Live" Stat) */}
-          <div className="bg-[#1c1c1e]/40 border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-cyan-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group">
+          <div className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-cyan-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group">
             <span className="font-tech text-cyan-400 text-[10px] uppercase tracking-widest mb-2">
               Active Node
             </span>
