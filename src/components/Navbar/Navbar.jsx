@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { useEffect } from "react";
+import { scrollSpy } from "react-scroll";
 
 const Navbar = () => {
+  useEffect(() => {
+    // This tells the library: "Wake up and start watching the sections!"
+    scrollSpy.update();
+  }, []);
   return (
     <div className="w-full px-16 md:px-24 lg:px-30 bg-[#1D2132]">
       <nav className="fixed top-0 left-0 px-16 md:px-24 lg:px-30 w-full z-50 bg-[#1D2132] border-b border-white/5 backdrop-blur-md items-center flex justify-center">
@@ -39,7 +45,7 @@ const Navbar = () => {
                 to="builds"
                 smooth={true}
                 spy={true}
-                offset={-200}
+                offset={-300}
                 activeClass="!text-white !drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400  cursor-pointer hover:text-blue-300 transition-all"
               >

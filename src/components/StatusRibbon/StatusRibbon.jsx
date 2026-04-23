@@ -11,7 +11,7 @@ const StatusRibbon = () => {
         <div className="h-px flex-1 bg-white/10"></div>
       </div>
       {/* ribbon code */}
-      <div className=" max-w-7xl mx-auto mb-16">
+      <div className=" max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* 1. Hours Coded (The "Grind" Stat) */}
           <div className="bg-[#1c1c1e]/40 border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group">
@@ -20,7 +20,7 @@ const StatusRibbon = () => {
             </span>
             <div className="flex justify-center items-baseline gap-1">
               <span className="text-3xl font-brand font-black text-gray-200">
-                1,240
+                1,240+
               </span>
               <span className="text-[10px] text-gray-500 font-tech">HRS</span>
             </div>
