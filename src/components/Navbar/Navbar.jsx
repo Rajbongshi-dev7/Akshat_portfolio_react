@@ -9,7 +9,7 @@ const Navbar = () => {
     scrollSpy.update();
   }, []);
   return (
-    <div className="w-full px-16 md:px-24 lg:px-30 bg-[#171927]">
+    <div className="w-full px-16 md:px-24 lg:px-30">
       <nav className="fixed top-0 left-0 px-16 md:px-24 lg:px-30 w-full z-50 bg-[#181b29] border-b border-white/5 backdrop-blur-md items-center flex justify-center">
         <div className="w-full lg:max-w-7xl  gap-13  h-20 flex items-center justify-between">
           {/* Logo Section */}
