@@ -9,7 +9,7 @@ const projects = [
     tag: "Core_System",
     desc: "A high-end architectural portfolio featuring Bento-style components and real-time Git status integration.",
     tech: ["React", "Tailwind", "Framer"],
-    span: "md:col-span-8",
+    span: "md:col-span-6",
     status: "v1.0.4",
     link: "https://github.com",
   },
@@ -29,9 +29,9 @@ const ProjectsArea = () => {
   return (
     <div
       id="builds"
-      className="bg-[#141720] py-32 px-6 md:px-20 overflow-hidden"
+      className="bg-[#141720] py-32 px-16 md:px-24  lg:px-30 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto ">
         {/* SECTION HEADER WITH SLIDE-IN */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -50,7 +50,7 @@ const ProjectsArea = () => {
         </motion.div>
 
         {/* BENTO GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-10 gap-10">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
@@ -109,7 +109,7 @@ const ProjectsArea = () => {
 
                   {/* VISUAL PLACEHOLDER (Only for the large card) */}
                   {/* THE PREVIEW VIEWPORT */}
-                  {project.span.includes("col-span-8") && (
+                  {project.span.includes("col-span-6") && (
                     <div className="relative h-64 w-full bg-[#0a0a0c] rounded-2xl border border-white/5 mt-auto mb-8 overflow-hidden group-hover:border-blue-500/40 transition-all duration-700">
                       {/* Browser-style Header */}
                       <div className="absolute top-0 w-full h-6 bg-[#161618] border-b border-white/5 z-20 flex items-center px-3 gap-1.5">
@@ -125,11 +125,11 @@ const ProjectsArea = () => {
                       <div className="relative w-full h-full pt-6 overflow-hidden contain-strict">
                         <motion.div
                           initial={{ y: 0 }}
-                          whileHover={{ y: "-65%" }} // Adjusted for your image length
+                          whileHover={{ y: "-70%" }}
                           transition={{
-                            duration: 14, // Slower = Smoother. Try 8-10 seconds.
-                            ease: "linear", // Essential for constant speed
-                            repeat: 0, // Ensures it doesn't loop weirdly
+                            duration: 18,
+                            ease: "linear",
+                            repeat: 0,
                           }}
                           style={{ willChange: "transform" }}
                           className="w-full"

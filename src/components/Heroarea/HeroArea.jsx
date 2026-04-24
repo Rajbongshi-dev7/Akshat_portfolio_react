@@ -45,27 +45,27 @@ const HeroArea = () => {
               {
                 name: "React",
                 icon: <FaReact />,
-                color: "text-blue-400 hover:scale-125",
+                color: `text-blue-400 hover:scale-125 group-hover:rotate-360 duration-[1.5s]`,
               },
               {
                 name: "JavaScript",
                 icon: <TbBrandJavascript />,
-                color: `text-yellow-400 hover:scale-125`,
+                color: `text-yellow-400 hover:scale-125 group-hover:rotate-y-360 duration-[1.5s]`,
               },
               {
                 name: "Tailwind",
                 icon: <RiTailwindCssFill />,
-                color: `text-blue-400 hover:scale-125`,
+                color: `text-blue-400 hover:scale-125 group-hover:rotate-x-360 duration-[1.5s]`,
               },
               {
                 name: "HTML",
                 icon: <TiHtml5 />,
-                color: `text-yellow-400 hover:scale-125`,
+                color: `text-yellow-400 hover:scale-125 group-hover:rotate-y-360 duration-[1.5s]`,
               },
             ].map((skill) => (
               <div
                 key={skill.name}
-                className={`bg-[#1c1c1e]/50 border border-white/5 rounded-[30px] p-6 flex flex-col items-center justify-center text-center hover:border-blue-500/30 hover:shadow-blue-700 shadow-lg hover:scale-105 transition-all duration-400 group`}
+                className={`bg-[#1c1c1e]/50 border border-white/5 rounded-[30px] p-6 flex flex-col items-center justify-center text-center hover:border-blue-500/30 hover:shadow-blue-700 shadow-lg hover:scale-105 transform animate-[blurIn_1s_forwards]  transition-all  duration-800 group`}
               >
                 <span
                   className={`text-2xl mb-2 transition-all w-12 h-12 duration-300 ${skill.color} [&>svg]:w-full [&>svg]:h-full group-hover:scale-110`}

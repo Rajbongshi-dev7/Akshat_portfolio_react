@@ -18,3 +18,17 @@
 .perspective-1000 {
   perspective: 1000px;
 }
+@layer utilities {
+  @keyframes blurIn {
+    0% {
+      filter: blur(5px);
+      opacity: 0.75;
+      transform: scale(0.3);
+    }
+    100% {
+      filter: blur(0);
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
