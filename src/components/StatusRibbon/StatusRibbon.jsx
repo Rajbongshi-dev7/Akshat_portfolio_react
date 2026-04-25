@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const StatusRibbon = () => {
   return (
@@ -15,16 +15,13 @@ const StatusRibbon = () => {
       <div className=" max-w-7xl  mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-4 gap-4">
           {/* 1. Hours Coded (The "Grind" Stat) */}
-          <motion.div initial={{ opacity:0,scale:0.1 }}
-      
-    
-      whileInView={{ opacity: 1,scale:1 }}
-      
-      
-      transition={{ duration: .6,  ease:"easeIn"  }}
-      
-    
-      viewport={{ once:false, amount:.1 }} className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, ease: "easeIn" }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group"
+          >
             <span className="font-tech text-blue-500 text-[10px] uppercase tracking-widest mb-2">
               Total Focus
             </span>
@@ -40,13 +37,13 @@ const StatusRibbon = () => {
           </motion.div>
 
           {/* 2. Projects Completed (The "Output" Stat) */}
-          <motion.div initial={{ opacity: 0,scale:0.1 }}
-      
-      whileInView={{ opacity: 1, scale:1 }}
-      
-      transition={{ duration: .6,  ease:"easeIn" }}
-      
-      viewport={{ once:false, amount:.1 }} className="bg-[#17171f] border  border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, ease: "easeIn" }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="bg-[#17171f] border  border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all"
+          >
             <span className="font-tech text-blue-500 text-[10px] uppercase tracking-widest mb-2">
               Deployments
             </span>
@@ -64,16 +61,13 @@ const StatusRibbon = () => {
           </motion.div>
 
           {/* 3. GitHub Contributions (The "Consistency" Stat) */}
-          <motion.div initial={{ opacity: 0,scale:0.1 }}
-      
-   
-      whileInView={{ opacity: 1,scale:1 }}
-      
-     
-      transition={{ duration: .6, ease:"easeIn"  }}
-      
-      
-      viewport={{ once:false, amount:.1 }} className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-green-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, ease: "easeIn" }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-green-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all"
+          >
             <span className="font-tech text-green-500 text-[10px] uppercase tracking-widest mb-2">
               Git Activity
             </span>
@@ -96,17 +90,13 @@ const StatusRibbon = () => {
           </motion.div>
 
           {/* 4. Active Node (The "Live" Stat) */}
-          <motion.div 
-      initial={{ opacity: 0,scale:0.1 }}
-      
-    
-      whileInView={{ opacity: 1, scale:1 }}
-      
-      
-      transition={{ duration: .6, ease:"easeIn" }}
-      
-    
-      viewport={{ once:false, amount:.1 }} className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-cyan-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.4, ease: "easeIn" }}
+            viewport={{ once: true, amount: 0.1 }}
+            className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-cyan-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group"
+          >
             <span className="font-tech text-cyan-400 text-[10px] uppercase tracking-widest mb-2">
               Active Node
             </span>
