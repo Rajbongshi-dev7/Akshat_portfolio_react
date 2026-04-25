@@ -18,9 +18,9 @@ const StatusRibbon = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, ease: "easeIn" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             viewport={{ once: true, amount: 0.1 }}
-            className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group"
+            className="bg-[#17171f] border border-white/5 rounded-xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group"
           >
             <span className="font-tech text-blue-500 text-[10px] uppercase tracking-widest mb-2">
               Total Focus
@@ -40,9 +40,9 @@ const StatusRibbon = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, ease: "easeIn" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             viewport={{ once: true, amount: 0.1 }}
-            className="bg-[#17171f] border  border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all"
+            className="bg-[#17171f] border  border-white/5 rounded-xl p-6 flex flex-col justify-center text-center hover:border-blue-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all"
           >
             <span className="font-tech text-blue-500 text-[10px] uppercase tracking-widest mb-2">
               Deployments
@@ -64,9 +64,9 @@ const StatusRibbon = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, ease: "easeIn" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             viewport={{ once: true, amount: 0.1 }}
-            className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-green-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all"
+            className="bg-[#17171f] border border-white/5 rounded-xl p-6 flex flex-col justify-center text-center hover:border-green-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all"
           >
             <span className="font-tech text-green-500 text-[10px] uppercase tracking-widest mb-2">
               Git Activity
@@ -93,9 +93,9 @@ const StatusRibbon = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.4, ease: "easeIn" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             viewport={{ once: true, amount: 0.1 }}
-            className="bg-[#17171f] border border-white/5 rounded-3xl p-6 flex flex-col justify-center text-center hover:border-cyan-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group"
+            className="bg-[#17171f] border border-white/5 rounded-xl p-6 flex flex-col justify-center text-center hover:border-cyan-500/20 hover:shadow-blue-700 shadow-lg duration-400 hover:scale-y-110 transition-all group"
           >
             <span className="font-tech text-cyan-400 text-[10px] uppercase tracking-widest mb-2">
               Active Node

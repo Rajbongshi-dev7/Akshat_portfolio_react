@@ -35,7 +35,7 @@ const HeroArea = () => {
             {/* Faint Delta Watermark */}
             <img
               src="./logo.svg"
-              className="absolute -right-8 bottom-12 w-86 h-86 opacity-[0.05] -rotate-12 group-hover:rotate-8 transition-transform duration-1000"
+              className="absolute -right-8 bottom-12 w-sm h-sm opacity-[0.05] -rotate-12 group-hover:rotate-8 transition-transform duration-1000"
             />
           </div>
 
@@ -52,15 +52,16 @@ const HeroArea = () => {
                 icon: <TbBrandJavascript />,
                 color: `text-yellow-400 hover:scale-125 group-hover:rotate-y-360 duration-[1.5s]`,
               },
-              {
-                name: "Tailwind",
-                icon: <RiTailwindCssFill />,
-                color: `text-blue-400 hover:scale-125 group-hover:rotate-x-360 duration-[1.5s]`,
-              },
+
               {
                 name: "HTML",
                 icon: <TiHtml5 />,
                 color: `text-yellow-400 hover:scale-125 group-hover:rotate-y-360 duration-[1.5s]`,
+              },
+              {
+                name: "Tailwind",
+                icon: <RiTailwindCssFill />,
+                color: `text-blue-400 hover:scale-125 group-hover:rotate-x-360 duration-[1.5s]`,
               },
             ].map((skill) => (
               <div
