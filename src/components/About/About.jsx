@@ -1,4 +1,4 @@
-import { easeIn, easeOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const About = () => {
   const item = {
@@ -13,58 +13,106 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full px-8 md:px-24 py-32 bg-[#1D2132] scroll-mt-20"
+      className="w-full px-16 md:px-24 lg:px-30 py-32 bg-[#151724] scroll-mt-20"
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-16">
           <div className="h-px w-12 bg-blue-500/50"></div>
           <h2 className="font-tech text-blue-400 text-xs uppercase tracking-[0.5em]">
-            Identity / 03
+            Identity /
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          {/* THE IDENTITY CARD */}
+        <div className="grid grid-cols-1 md:grid-cols-7 gap-10">
+          {/* THE IDENTITY CARD - FULL NARRATIVE VERSION */}
           <motion.div
             variants={item}
-            initial="hidden"
-            whileInView="show"
+            initial={{ opacity: 0, y: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1.05 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            whileHover={{
+              y: -10,
+              scale: 1.05,
+              transition: { duration: 0.4, ease: "easeOut" },
+            }}
             viewport={{ once: true }}
-            className="md:col-span-2 md:row-span-2 bg-[#1c1c1e]/40 border border-white/5 p-10 rounded-4xl flex flex-col justify-between"
+            className="md:col-span-4 md:row-span-4 bg-[#1c1c1e]/40 border border-white/5 p-10 rounded-[2.5rem] flex flex-col justify-between relative overflow-hidden group"
           >
-            <div>
-              <h3 className="text-white font-brand font-black text-3xl uppercase mb-8 tracking-tighter">
-                The Architect
-              </h3>
-              <p className="text-gray-400 text-lg leading-relaxed">
-                Based in{" "}
-                <span className="text-white font-bold">Bangladesh</span>, I
-                architect digital interfaces that balance
-                <span className="text-blue-400">
-                  {" "}
-                  structural integrity
-                </span>{" "}
-                with{" "}
-                <span className="text-white font-bold">
-                  {" "}
-                  visual storytelling
-                </span>
-                . I specialize in high-performance frontend systems where every
-                frame and every line of code serves a purpose.
-              </p>
+            <div className="relative z-10">
+              <div className="flex items-center gap-5 mb-8">
+                {/* THE PHOTO SLOT: Essential for the "Personal Brand" Blueprint */}
+                <div className="w-30 h-30 rounded-full overflow-hidden border border-white/10 shadow-2xl">
+                  <img
+                    src="./doyal_dev7.jpg"
+                    alt="The Architect"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-white font-brand font-black text-2xl uppercase tracking-tighter">
+                    The Architect
+                  </h3>
+                  <p className="text-blue-500 font-tech text-[10px] uppercase tracking-widest">
+                    Est. 2026 / BD
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-gray-400 text-base md:text-lg leading-relaxed font-medium">
+                <p>
+                  My journey into the digital realm began with a fascination for
+                  how
+                  <span className="text-white"> complex systems</span> could be
+                  translated into
+                  <span className="text-blue-400">
+                    {" "}
+                    simple, human experiences
+                  </span>
+                  . What started as a deep dive into 3D logic evolved into a
+                  career dedicated to building high-performance web
+                  architectures.
+                </p>
+                <p>
+                  Today, I bridge the gap between creative storytelling and
+                  engineering discipline. I don't just build websites; I
+                  engineer
+                  <span className="text-white"> digital environments</span> that
+                  are fast, accessible, and aesthetically indestructible.
+                </p>
+                <p>
+                  I specialize in working with brands that value
+                  <span className="text-blue-500"> precision over fluff</span>,
+                  transforming abstract ideas into production-ready reality.
+                </p>
+              </div>
             </div>
-            <div className="mt-12 text-gray-500 text-xs font-tech uppercase tracking-widest">
-              Available for Global Projects
+
+            <div className="mt-12 flex items-center justify-between relative z-10">
+              <span className="text-gray-500 text-[10px] font-tech uppercase tracking-[0.3em]">
+                Based in Bangladesh / Working Globally
+              </span>
+              <div className="flex gap-2">
+                <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
+                <span className="text-[10px] text-gray-400 uppercase font-tech tracking-widest">
+                  Active
+                </span>
+              </div>
             </div>
           </motion.div>
 
           {/* THE ENGINEERING STANDARDS CARD (The Pivot) */}
           <motion.div
             variants={item}
-            initial="hidden"
-            whileInView="show"
+            initial={{ opacity: 0, y: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1.05 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            whileHover={{
+              y: -10,
+              scale: 1.05,
+              transition: { duration: 0.4, ease: "easeOut" },
+            }}
             viewport={{ once: true }}
-            className="md:col-span-2 bg-[#1c1c1e]/40 border border-white/5 p-8 rounded-4xl"
+            className="md:col-span-3 bg-[#1c1c1e]/40 border border-white/5 p-8 rounded-4xl"
           >
             <h4 className="text-blue-500 font-tech text-[10px] uppercase tracking-[0.3em] mb-4">
               Production Philosophy
@@ -93,7 +141,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="md:col-span-1 bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 rounded-4xl flex flex-col justify-center"
+            className="md:col-span-3 bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 rounded-4xl flex flex-col justify-center"
           >
             <h4 className="text-gray-500 font-tech text-[10px] uppercase mb-3">
               Current R&D
@@ -104,14 +152,24 @@ const About = () => {
           </motion.div>
 
           {/* THE ACTION CARD */}
-          <a
-            href="#contact"
-            className="md:col-span-1 bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 transition-all"
+          <motion.a
+            variants={item}
+            initial={{ opacity: 0, y: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1.05 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            whileHover={{
+              y: -10,
+              scale: 1.05,
+              transition: { duration: 0.4, ease: "easeOut" },
+            }}
+            viewport={{ once: true }}
+            href="mailto:doyalrajbs7@gmail.com?subject=Initiate Build: Project Inquiry"
+            className="md:col-span-3 bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 transition-all"
           >
             <h4 className="text-white font-brand font-black text-xs uppercase tracking-widest">
               Initiate <br /> Build
             </h4>
-          </a>
+          </motion.a>
         </div>
       </div>
     </section>

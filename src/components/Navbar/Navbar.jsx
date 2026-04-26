@@ -32,7 +32,7 @@ const Navbar = () => {
           <div className="links flex gap-20">
             <div className="hidden md:flex items-center md:gap-7 lg:gap-10 font-tech text-sm text-slate-text">
               <Link
-                to="About"
+                to="about"
                 smooth={true}
                 offset={-200}
                 spy={true}

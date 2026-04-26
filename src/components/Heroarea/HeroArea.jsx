@@ -5,11 +5,11 @@ import { FaReact } from "react-icons/fa";
 import { TiHtml5 } from "react-icons/ti";
 const HeroArea = () => {
   return (
-    <div id="hero" className="w-full px-16 md:px-24 lg:px-30 bg-[#1D2132]">
+    <div id="hero" className="w-full px-16 md:px-24 lg:px-30 bg-[#151516]">
       <section className="pt-32 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 gap-4">
+        <div className="grid ">
           {/* 1. THE POWER HEADING TILE */}
-          <div className=" bg-[#1c1c1e]/50 border border-white/5 rounded-t-xl pt-20 pb-28 px-16  flex flex-col justify-center relative overflow-hidden group">
+          <div className=" bg-[#1c1c1e]/50 border border-blue-900 rounded-t-xl pt-20 pb-28 px-16  flex flex-col justify-center relative overflow-hidden group">
             {/* Micro-Header: Career-Safe Version */}
             <div className="flex items-center gap-3 mb-8">
               <span className="h-px w-8 bg-blue-500"></span>
