@@ -16,6 +16,15 @@ const MobileMenu = () => {
           builds
         </Link>
         <Link
+          to="About"
+          smooth={true}
+          spy={true}
+          activeClass="text-blue-300"
+          className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
+        >
+          about
+        </Link>
+        <Link
           to="stack"
           smooth={true}
           spy={true}

@@ -6,10 +6,10 @@ import { TiHtml5 } from "react-icons/ti";
 const HeroArea = () => {
   return (
     <div id="hero" className="w-full px-16 md:px-24 lg:px-30 bg-[#1D2132]">
-      <section className="pt-32 pb-10 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 mb-4">
+      <section className="pt-32 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 gap-4">
           {/* 1. THE POWER HEADING TILE */}
-          <div className="lg:col-span-3 bg-[#1c1c1e]/50 border border-white/5 rounded-[40px] p-10 md:p-16 flex flex-col justify-center relative overflow-hidden group">
+          <div className=" bg-[#1c1c1e]/50 border border-white/5 rounded-t-xl pt-20 pb-28 px-16  flex flex-col justify-center relative overflow-hidden group">
             {/* Micro-Header: Career-Safe Version */}
             <div className="flex items-center gap-3 mb-8">
               <span className="h-px w-8 bg-blue-500"></span>
@@ -35,12 +35,12 @@ const HeroArea = () => {
             {/* Faint Delta Watermark */}
             <img
               src="./logo.svg"
-              className="absolute -right-8 bottom-12 w-sm h-sm opacity-[0.05] -rotate-12 group-hover:rotate-8 transition-transform duration-1000"
+              className="absolute right-28 bottom-12 w-sm h-sm opacity-[0.05] -rotate-12 group-hover:rotate-8 transition-transform duration-1000"
             />
           </div>
 
           {/* 2. CORE STACK GRID (2x2 Bento) */}
-          <div className="lg:col-span-2 grid grid-cols-2 gap-6">
+          {/* <div className="lg:col-span-2 grid grid-cols-2 gap-x-6 gap-y-10">
             {[
               {
                 name: "React",
@@ -78,7 +78,7 @@ const HeroArea = () => {
                 </h3>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
