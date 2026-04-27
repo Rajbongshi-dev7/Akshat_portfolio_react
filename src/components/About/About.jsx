@@ -23,7 +23,7 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-10 md:space-x-2 lg:grid-cols-12 gap-10">
           {/* THE IDENTITY CARD - FULL NARRATIVE VERSION */}
           <motion.div
             variants={item}
@@ -36,7 +36,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="lg:col-span-7 lg:row-span-4 bg-[#1c1c1e]/40 border border-white/5 p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-blue-500 relative overflow-hidden group"
+            className="md:col-span-7 lg:col-span-7 md:row-span-3 lg:row-span-3 bg-[#1c1c1e]/40 border border-white/5 p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-blue-500 relative overflow-hidden group"
           >
             <div className="relative z-10">
               <div className="flex items-center gap-5 mb-8">
@@ -72,7 +72,7 @@ const About = () => {
                   career dedicated to building high-performance web
                   architectures.
                 </p>
-                <p>
+                <p className="hidden lg:block">
                   Today, I bridge the gap between creative storytelling and
                   engineering discipline. I don't just build websites; I
                   engineer
@@ -112,7 +112,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="lg:col-span-4 lg:col-start-9 bg-[#1c1c1e]/40 border hover:border-blue-500 border-white/5 p-8 mb-6 rounded-4xl"
+            className=" md:col-span-3 md:col-start-8 md:row-span-1 lg:col-span-4 lg:col-start-9 bg-[#1c1c1e]/40 border hover:border-blue-500 border-white/5 p-8 mb-6 rounded-4xl"
           >
             <h4 className="text-blue-500 font-tech text-[10px] uppercase tracking-[0.3em] mb-4">
               Production Philosophy
@@ -122,10 +122,16 @@ const About = () => {
               <span className="text-white font-bold">
                 low-latency production workflow
               </span>
-              engineered for speed and stability. This ensures{" "}
-              <span className="text-blue-400 font-bold">rapid iteration</span>{" "}
-              and the delivery of high-fidelity web applications that are
-              optimized for the modern user.
+              engineered for speed and stability.
+              <span className="hidden lg:block">
+                {" "}
+                This ensures{" "}
+                <span className="text-blue-400 font-bold">
+                  rapid iteration
+                </span>{" "}
+                and the delivery of high-fidelity web applications that are
+                optimized for the modern user.
+              </span>
             </p>
           </motion.div>
 
@@ -141,7 +147,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="lg:col-span-4 lg:col-start-9 bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 mb-6 rounded-4xl flex flex-col justify-center"
+            className=" md:col-span-3 md:col-start-8 lg:col-span-4 lg:col-start-9 bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 mb-6 rounded-4xl flex flex-col justify-center"
           >
             <h4 className="text-gray-500 font-tech text-[10px] uppercase mb-3">
               Current R&D
@@ -164,7 +170,7 @@ const About = () => {
             }}
             viewport={{ once: true }}
             href="mailto:doyalrajbs7@gmail.com?subject=Initiate Build: Project Inquiry"
-            className="lg:col-span-4 lg:col-start-9 bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 border hover:border-white transition-all"
+            className="md:col-span-3 md:col-start-8 lg:col-span-4 lg:col-start-9 bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 border hover:border-white transition-all"
           >
             <h4 className="text-white font-brand font-black text-xs uppercase tracking-widest">
               Initiate <br /> Build
