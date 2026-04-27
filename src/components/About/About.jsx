@@ -58,7 +58,7 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="space-y-4 text-gray-400 text-base md:text-lg leading-relaxed font-medium">
+              <div className="space-y-4 text-gray-400 text-sm md:text-base leading-relaxed font-medium">
                 <p>
                   My journey into the digital realm began with a fascination for
                   how
