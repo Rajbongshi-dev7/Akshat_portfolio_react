@@ -23,7 +23,7 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-7 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
           {/* THE IDENTITY CARD - FULL NARRATIVE VERSION */}
           <motion.div
             variants={item}
@@ -36,7 +36,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="md:col-span-4 md:row-span-4 bg-[#1c1c1e]/40 border border-white/5 p-10 rounded-[2.5rem] flex flex-col justify-between relative overflow-hidden group"
+            className="lg:col-span-7 lg:row-span-4 bg-[#1c1c1e]/40 border border-white/5 p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-blue-500 relative overflow-hidden group"
           >
             <div className="relative z-10">
               <div className="flex items-center gap-5 mb-8">
@@ -87,7 +87,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="mt-12 flex items-center justify-between relative z-10">
+            <div className="mt-8 flex items-center justify-between relative z-10">
               <span className="text-gray-500 text-[10px] font-tech uppercase tracking-[0.3em]">
                 Based in Bangladesh / Working Globally
               </span>
@@ -112,7 +112,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="md:col-span-3 bg-[#1c1c1e]/40 border border-white/5 p-8 rounded-4xl"
+            className="lg:col-span-4 lg:col-start-9 bg-[#1c1c1e]/40 border hover:border-blue-500 border-white/5 p-8 mb-6 rounded-4xl"
           >
             <h4 className="text-blue-500 font-tech text-[10px] uppercase tracking-[0.3em] mb-4">
               Production Philosophy
@@ -141,7 +141,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="md:col-span-3 bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 rounded-4xl flex flex-col justify-center"
+            className="lg:col-span-4 lg:col-start-9 bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 mb-6 rounded-4xl flex flex-col justify-center"
           >
             <h4 className="text-gray-500 font-tech text-[10px] uppercase mb-3">
               Current R&D
@@ -164,7 +164,7 @@ const About = () => {
             }}
             viewport={{ once: true }}
             href="mailto:doyalrajbs7@gmail.com?subject=Initiate Build: Project Inquiry"
-            className="md:col-span-3 bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 transition-all"
+            className="lg:col-span-4 lg:col-start-9 bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 border hover:border-white transition-all"
           >
             <h4 className="text-white font-brand font-black text-xs uppercase tracking-widest">
               Initiate <br /> Build
