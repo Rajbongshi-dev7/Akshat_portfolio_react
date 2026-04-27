@@ -29,8 +29,8 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Links - Using font-tech for that 'coding' feel */}
-          <div className="links flex gap-20">
-            <div className="hidden md:flex items-center md:gap-7 lg:gap-10 font-tech text-sm text-slate-text">
+          <div className="links flex items-center md:gap-7 lg:gap-20">
+            <div className="hidden md:flex items-center md:gap-7 lg:gap-12 font-tech text-sm text-slate-text">
               <Link
                 to="about"
                 smooth={true}
@@ -74,7 +74,7 @@ const Navbar = () => {
             </div>
 
             {/* Call to Action */}
-            <button className="bg-[#00aeff] border-none text-black px-1 py-0.5 md:px-1.5 md:py-0.5 lg:px-2 lg:py-1 rounded-full font-body text-sm md:text-lg cursor-pointer font-medium hover:bg-blue-600 hover:text-white transition-all duration-300 w-18 md:w-24">
+            <button className="bg-[#00aeff] border-none text-black px-1 py-1 md:px-1 md:py-0.5 lg:px-2  rounded-full font-body text-xs md:text-sm lg:text-lg cursor-pointer font-medium hover:bg-blue-600 hover:text-white transition-all duration-300 w-18 md:w-20 md:h-8 lg:w-24">
               Connect
             </button>
           </div>
