@@ -22,7 +22,7 @@ const HeroArea = () => {
             </div>
 
             {/* The "Indestructible" Bold Heading */}
-            <h1 className="font-brand font-extrabold text-4xl sm:text-5xl md:text-8xl text-gray-200 leading-[0.9] tracking-tighter uppercase mb-10">
+            <h1 className="font-brand font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-gray-200 leading-[0.9] tracking-tighter uppercase mb-10">
               Building <br />
               <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-600">
                 Scalable
@@ -38,7 +38,7 @@ const HeroArea = () => {
             {/* Faint Delta Watermark */}
             <img
               src="./logo.svg"
-              className="absolute right-3 bottom-26 md:right-28 md:bottom-12 w-32 h-32 md:w-sm md:h-sm opacity-[0.1] md:opacity-[0.05] -rotate-12 group-hover:rotate-8 transition-transform duration-1000"
+              className="absolute w-1/2 h-1/2 right-3 bottom-20 md:right-28 md:bottom-22   opacity-[0.1] md:opacity-[0.07] -rotate-12 group-hover:rotate-8 transition-transform duration-1000"
             />
           </div>
 
