@@ -11,11 +11,8 @@ const About = () => {
   };
 
   return (
-    <section
-      id="about"
-      className="w-full px-16 md:px-24 lg:px-30 py-32 bg-[#151724] scroll-mt-20"
-    >
-      <div className="max-w-7xl mx-auto">
+    <section id="about" className="w-full py-32 bg-[#151724] scroll-mt-20">
+      <div className="max-w-7xl px-6 sm:px-16 md:px-24 lg:px-30 mx-auto">
         <div className="flex items-center gap-4 mb-16">
           <div className="h-px w-12 bg-blue-500/50"></div>
           <h2 className="font-tech text-blue-400 text-xs uppercase tracking-[0.5em]">
@@ -23,7 +20,7 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-10 md:space-x-2 lg:grid-cols-12 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-10 md:space-x-2 p-3 lg:grid-cols-12 space-y-10  md:gap-10">
           {/* THE IDENTITY CARD - FULL NARRATIVE VERSION */}
           <motion.div
             variants={item}
@@ -36,7 +33,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="md:col-span-7 lg:col-span-7 md:row-span-3 lg:row-span-3 bg-[#1c1c1e]/40 border border-white/5 p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-blue-500 relative overflow-hidden group"
+            className="md:col-span-7 w-full lg:col-span-7 md:row-span-3 lg:row-span-3 bg-[#1c1c1e]/40 border border-white/5 p-3 lg:p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-blue-500 relative overflow-hidden group"
           >
             <div className="relative z-10">
               <div className="flex items-center gap-5 mb-8">
