@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import ProjectsArea from "./components/ProjectsArea/ProjectsArea";
 import StatusRibbon from "./components/StatusRibbon/StatusRibbon";
 import About from "./components/About/About";
+import SkillsSection from "./components/SkillsSection/SkillsSection";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
       <HeroArea />
       <About />
       <StatusRibbon />
+      <SkillsSection />
       <ProjectsArea />
       <MobileMenu />
     </>

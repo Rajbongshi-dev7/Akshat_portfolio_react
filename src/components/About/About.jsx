@@ -121,7 +121,7 @@ const About = () => {
               Precision requires a disciplined environment. I maintain a{" "}
               <span className="text-white font-bold">
                 low-latency production workflow
-              </span>
+              </span>{" "}
               engineered for speed and stability.
               <span className="hidden lg:block">
                 {" "}
