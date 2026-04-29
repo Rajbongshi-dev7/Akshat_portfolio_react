@@ -11,8 +11,11 @@ const About = () => {
   };
 
   return (
-    <section id="about" className="w-full py-32 bg-[#151724] scroll-mt-20">
-      <div className="max-w-7xl px-6 sm:px-16 md:px-24 lg:px-30 mx-auto">
+    <section
+      id="about"
+      className="w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-32 bg-[#151724] scroll-mt-20"
+    >
+      <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-16">
           <div className="h-px w-12 bg-blue-500/50"></div>
           <h2 className="font-tech text-blue-400 text-xs uppercase tracking-[0.5em]">
@@ -20,12 +23,12 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-10 md:space-x-2 p-3 lg:grid-cols-12 space-y-10  md:gap-10">
+        <div className="grid max-w-7xl grid-cols-1 md:grid-cols-12 gap-6  md:gap-10">
           {/* THE IDENTITY CARD - FULL NARRATIVE VERSION */}
           <motion.div
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1.05 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
@@ -33,7 +36,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className="md:col-span-7 w-full lg:col-span-7 md:row-span-3 lg:row-span-3 bg-[#1c1c1e]/40 border border-white/5 p-3 lg:p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-blue-500 relative overflow-hidden group"
+            className="md:col-span-7 w-full lg:col-span-7 md:row-span-3 lg:row-span-3 bg-[#1c1c1e]/40 border border-white/5 p-3 lg:p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-blue-500 relative  group"
           >
             <div className="relative z-10">
               <div className="flex items-center gap-5 mb-8">
@@ -101,7 +104,7 @@ const About = () => {
           <motion.div
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1.05 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
@@ -109,7 +112,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className=" md:col-span-3 md:col-start-8 md:row-span-1 lg:col-span-4 lg:col-start-9 bg-[#1c1c1e]/40 border hover:border-blue-500 border-white/5 p-8 mb-6 rounded-4xl"
+            className=" md:col-span-5 md:col-start-8 md:row-span-1 bg-[#1c1c1e]/40 border hover:border-blue-500 border-white/5 p-8 rounded-4xl"
           >
             <h4 className="text-blue-500 font-tech text-[10px] uppercase tracking-[0.3em] mb-4">
               Production Philosophy
@@ -136,7 +139,7 @@ const About = () => {
           <motion.div
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1.05 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
@@ -144,7 +147,7 @@ const About = () => {
               transition: { duration: 0.4, ease: "easeOut" },
             }}
             viewport={{ once: true }}
-            className=" md:col-span-3 md:col-start-8 lg:col-span-4 lg:col-start-9 bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 mb-6 rounded-4xl flex flex-col justify-center"
+            className=" md:col-span-5 md:col-start-8  bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 rounded-4xl flex flex-col justify-center"
           >
             <h4 className="text-gray-500 font-tech text-[10px] uppercase mb-3">
               Current R&D
@@ -158,7 +161,7 @@ const About = () => {
           <motion.a
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
-            whileInView={{ opacity: 1, scale: 1.05 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
@@ -167,7 +170,7 @@ const About = () => {
             }}
             viewport={{ once: true }}
             href="mailto:doyalrajbs7@gmail.com?subject=Initiate Build: Project Inquiry"
-            className="md:col-span-3 md:col-start-8 lg:col-span-4 lg:col-start-9 bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 border hover:border-white transition-all"
+            className="md:col-span-5 md:col-start-8  bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 border hover:border-white transition-all"
           >
             <h4 className="text-white font-brand font-black text-xs uppercase tracking-widest">
               Initiate <br /> Build
