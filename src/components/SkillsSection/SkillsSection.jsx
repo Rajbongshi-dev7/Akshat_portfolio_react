@@ -122,6 +122,7 @@ const SkillSection = () => {
               key={index}
               variants={item}
               whileHover={{ y: -6 }}
+              transition={{ duration: 0.3, ease: "easeIn" }}
               className={`${skill.wide ? "md:col-span-2" : "md:col-span-1"} group relative overflow-hidden rounded-[22px] border border-white/5 bg-white/3 backdrop-blur-xl p-6 transition-colors hover:bg-white/5`}
             >
               <div
@@ -253,7 +254,7 @@ const SkillSection = () => {
                     {skill.level}
                   </p>
                   <p
-                    className={`text-sm text-gray-400 font-light font-tech leading-relaxed ${!skill.wide && "hidden group-hover:block"}`}
+                    className={`text-sm text-gray-400 font-light font-tech leading-relaxed   duration-400   ${!skill.wide && "hidden group-hover:block"}`}
                   >
                     {skill.desc}
                   </p>
