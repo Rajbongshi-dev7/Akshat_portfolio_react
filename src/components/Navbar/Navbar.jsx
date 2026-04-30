@@ -42,7 +42,7 @@ const Navbar = () => {
                 /about
               </Link>
               <Link
-                to="Skills"
+                to="skills"
                 smooth={true}
                 offset={-200}
                 spy={true}

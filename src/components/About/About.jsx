@@ -17,6 +17,9 @@ const About = () => {
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-16">
+          <h2 className="font-tech text-blue-400 text-xs uppercase italic">
+            01
+          </h2>
           <div className="h-px w-12 bg-blue-500/50"></div>
           <h2 className="font-tech text-blue-400 text-xs uppercase tracking-[0.5em]">
             Identity /
@@ -52,6 +55,9 @@ const About = () => {
                   <h3 className="text-white font-brand font-black text-2xl uppercase tracking-tighter">
                     The Architect
                   </h3>
+                  <h4 className="font-bold text-xl font-body italic my-2 text-cyan-300">
+                    Doyal Rajbongshi
+                  </h4>
                   <p className="text-blue-500 font-tech text-[10px] uppercase tracking-widest">
                     Est. 2026 / BD
                   </p>
@@ -153,7 +159,8 @@ const About = () => {
               Current R&D
             </h4>
             <p className="text-white font-brand font-bold text-sm uppercase tracking-tight italic">
-              Immersive 3D <br /> Narratives & <br /> Web Physics
+              Immersive 3D <br /> Narratives <br /> Web Physics &<br />
+              Blockchain
             </p>
           </motion.div>
 
