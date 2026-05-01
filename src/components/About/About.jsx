@@ -32,7 +32,7 @@ const About = () => {
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            transition={{ duration: 0.7, ease: "easeIn" }}
             whileHover={{
               y: -10,
               scale: 1.05,
@@ -111,7 +111,7 @@ const About = () => {
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            transition={{ duration: 0.7, ease: "easeIn" }}
             whileHover={{
               y: -10,
               scale: 1.05,
@@ -146,7 +146,7 @@ const About = () => {
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            transition={{ duration: 0.7, ease: "easeIn" }}
             whileHover={{
               y: -10,
               scale: 1.05,
@@ -169,7 +169,7 @@ const About = () => {
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            transition={{ duration: 0.7, ease: "easeIn" }}
             whileHover={{
               y: -10,
               scale: 1.05,
@@ -177,7 +177,7 @@ const About = () => {
             }}
             viewport={{ once: true }}
             href="mailto:doyalrajbs7@gmail.com?subject=Initiate Build: Project Inquiry"
-            className="md:col-span-5 md:col-start-8  bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center hover:bg-blue-500 border hover:border-white transition-all"
+            className="md:col-span-5 md:col-start-8  bg-blue-600 p-8 rounded-4xl flex flex-col items-center justify-center text-center border hover:border-white transition-all"
           >
             <h4 className="text-white font-brand font-black text-xs uppercase tracking-widest">
               Initiate <br /> Build

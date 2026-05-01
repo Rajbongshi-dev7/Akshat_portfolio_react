@@ -246,7 +246,7 @@ const SkillSection = () => {
               </div> */}
 
                 {/* TEXT CONTENT */}
-                <div className="flex-1 min-w-0">
+                {/* <div className="flex-1 min-w-0">
                   <h3 className="font-brand font-bold text-white text-lg truncate">
                     {skill.name}
                   </h3>
@@ -258,6 +258,35 @@ const SkillSection = () => {
                   >
                     {skill.desc}
                   </p>
+                </div> */}
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-brand font-bold text-white text-lg truncate">
+                    {skill.name}
+                  </h3>
+                  <p className="text-[10px] uppercase tracking-widest text-[#00e5ff] mb-2">
+                    {skill.level}
+                  </p>
+
+                  {/* THE REVEAL ENGINE */}
+                  <div
+                    className={`grid grid-rows-[1fr] transition-all duration-800 ease-in-out ${
+                      skill.wide
+                        ? "grid-rows-[1fr]"
+                        : "md:grid-rows-[0fr] md:group-hover:grid-rows-[1fr]"
+                    }`}
+                  >
+                    <div className="overflow-hidden">
+                      <p
+                        className={`text-sm text-gray-400 opacity-100 font-tech leading-relaxed transition-opacity duration-700 ${
+                          skill.wide
+                            ? "opacity-100"
+                            : "md:opacity-0  md:group-hover:opacity-100 delay-300"
+                        }`}
+                      >
+                        {skill.desc}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
