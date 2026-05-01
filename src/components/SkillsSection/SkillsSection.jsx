@@ -1,63 +1,68 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaReact } from "react-icons/fa";
+import { SKILLS } from "../JSfiles/skills";
 
-const SKILLS = [
-  {
-    name: "HTML5",
-    level: "Expert",
-    pct: 90,
-    icon: "🏗️",
-    color: "#00e5ff",
-    desc: "Semantic markup, accessibility-first structure, SEO-conscious foundations built to last",
-    wide: true,
-  },
-  {
-    name: "CSS3",
-    level: "Advanced",
-    pct: 85,
-    icon: "🎨",
-    color: "#a78bfa",
-    desc: "Flexbox, Grid, keyframes, custom properties and responsive mastery.",
-    wide: false,
-  },
-  {
-    name: "Tailwind",
-    level: "Advanced",
-    pct: 80,
-    icon: "💨",
-    color: "#38bdf8",
-    desc: "Utility-first rapid development and design systems.",
-    wide: false,
-  },
-  {
-    name: "JavaScript",
-    level: "Proficient",
-    pct: 75,
-    icon: "⚡",
-    color: "#fbbf24",
-    desc: "ES6+, DOM mastery, async/await, Fetch API, event-driven patterns.",
-    wide: false,
-  },
-  {
-    name: "React.js",
-    level: "Learning . Growing Fast",
-    pct: 65,
-    icon: <FaReact color="#00FFFF" />,
-    color: "#fb7185",
-    desc: "Component architecture, hooks, state management, JSX — actively building projects to level up every week.",
-    wide: true,
-  },
-  {
-    name: "Dev Tools",
-    level: "Proficient",
-    pct: 70,
-    icon: "🔧",
-    color: "#34d399",
-    desc: "Git, VS Code, Dev Tools and Figma basics.",
-    wide: false,
-  },
-];
+const Icon = {
+  react: <FaReact color="#00FFFF" />,
+};
+
+// const SKILLS = [
+//   {
+//     name: "HTML5",
+//     level: "Expert",
+//     pct: 90,
+//     icon: "🏗️",
+//     color: "#00e5ff",
+//     desc: "Semantic markup, accessibility-first structure, SEO-conscious foundations built to last",
+//     wide: true,
+//   },
+//   {
+//     name: "CSS3",
+//     level: "Advanced",
+//     pct: 85,
+//     icon: "🎨",
+//     color: "#a78bfa",
+//     desc: "Flexbox, Grid, keyframes, custom properties and responsive mastery.",
+//     wide: false,
+//   },
+//   {
+//     name: "Tailwind",
+//     level: "Advanced",
+//     pct: 80,
+//     icon: "💨",
+//     color: "#38bdf8",
+//     desc: "Utility-first rapid development and design systems.",
+//     wide: false,
+//   },
+//   {
+//     name: "JavaScript",
+//     level: "Proficient",
+//     pct: 75,
+//     icon: "⚡",
+//     color: "#fbbf24",
+//     desc: "ES6+, DOM mastery, async/await, Fetch API, event-driven patterns.",
+//     wide: false,
+//   },
+//   {
+//     name: "React.js",
+//     level: "Learning . Growing Fast",
+//     pct: 65,
+//     icon: <FaReact color="#00FFFF" />,
+//     color: "#fb7185",
+//     desc: "Component architecture, hooks, state management, JSX — actively building projects to level up every week.",
+//     wide: true,
+//   },
+//   {
+//     name: "Dev Tools",
+//     level: "Proficient",
+//     pct: 70,
+//     icon: "🔧",
+//     color: "#34d399",
+//     desc: "Git, VS Code, Dev Tools and Figma basics.",
+//     wide: false,
+//   },
+// ];
 
 const SkillSection = () => {
   const container = {
@@ -117,89 +122,91 @@ const SkillSection = () => {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-4 gap-4"
         >
-          {SKILLS.map((skill, index) => (
-            <motion.div
-              key={index}
-              variants={item}
-              whileHover={{ y: -6 }}
-              transition={{ duration: 0.3, ease: "easeIn" }}
-              className={`${skill.wide ? "md:col-span-2" : "md:col-span-1"} group relative overflow-hidden rounded-[22px] border border-white/5 bg-white/3 backdrop-blur-xl p-6 transition-colors hover:bg-white/5`}
-            >
-              <div
-                className={`flex ${skill.wide ? "flex-row items-center gap-6" : "flex-col items-start gap-4"} h-full`}
+          {SKILLS.map((skill, index) => {
+            const displayIcon = Icon[skill.icon] || skill.icon;
+            return (
+              <motion.div
+                key={index}
+                variants={item}
+                whileHover={{ y: -6 }}
+                transition={{ duration: 0.3, ease: "easeIn" }}
+                className={`${skill.wide ? "md:col-span-2" : "md:col-span-1"} group relative overflow-hidden rounded-[22px] border border-white/5 bg-white/3 backdrop-blur-xl p-6 transition-colors hover:bg-white/5`}
               >
-                {/* CIRCULAR PROGRESS */}
-                <div className="relative shrink-0">
-                  <svg className="w-20 h-20 md:w-24 md:h-24 -rotate-90 overflow-visible">
-                    {/* 1. THE TRACK */}
-                    <circle
-                      cx="50%"
-                      cy="50%"
-                      r="38"
-                      fill="none"
-                      className="stroke-white/5"
-                      strokeWidth="4"
-                    />
+                <div
+                  className={`flex ${skill.wide ? "flex-row items-center gap-6" : "flex-col items-start gap-4"} h-full`}
+                >
+                  {/* CIRCULAR PROGRESS */}
+                  <div className="relative shrink-0">
+                    <svg className="w-20 h-20 md:w-24 md:h-24 -rotate-90 overflow-visible">
+                      {/* 1. THE TRACK */}
+                      <circle
+                        cx="50%"
+                        cy="50%"
+                        r="38"
+                        fill="none"
+                        className="stroke-white/5"
+                        strokeWidth="4"
+                      />
 
-                    {/* 2. THE NEON OUTER GLOW (Should be WIDER) */}
-                    <motion.circle
-                      cx="50%"
-                      cy="50%"
-                      r="38"
-                      fill="none"
-                      stroke={skill.color}
-                      strokeWidth="8" // Make this wide so the blur spreads out
-                      strokeLinecap="round"
-                      initial={{ pathLength: 0, strokeDashoffset: 20 }}
-                      whileInView={{
-                        pathLength: skill.pct / 100,
-                        strokeDashoffset: 0,
-                      }}
-                      transition={{
-                        duration: 1.5,
-                        ease: "easeInOut",
-                        delay: 0.2,
-                      }}
-                      style={{
-                        filter: "blur(6px)",
-                        opacity: 0.4,
-                      }}
-                    />
+                      {/* 2. THE NEON OUTER GLOW (Should be WIDER) */}
+                      <motion.circle
+                        cx="50%"
+                        cy="50%"
+                        r="38"
+                        fill="none"
+                        stroke={skill.color}
+                        strokeWidth="8" // Make this wide so the blur spreads out
+                        strokeLinecap="round"
+                        initial={{ pathLength: 0, strokeDashoffset: 20 }}
+                        whileInView={{
+                          pathLength: skill.pct / 100,
+                          strokeDashoffset: 0,
+                        }}
+                        transition={{
+                          duration: 1.5,
+                          ease: "easeInOut",
+                          delay: 0.2,
+                        }}
+                        style={{
+                          filter: "blur(6px)",
+                          opacity: 0.4,
+                        }}
+                      />
 
-                    {/* 3. THE NEON CORE (Should be THINNER) */}
-                    <motion.circle
-                      cx="50%"
-                      cy="50%"
-                      r="38"
-                      fill="none"
-                      stroke={skill.color}
-                      className="stroke-2 md:stroke-8" // Keep the core sharp and thin
-                      strokeLinecap="round"
-                      initial={{ pathLength: 0 }}
-                      whileInView={{ pathLength: skill.pct / 100 }}
-                      transition={{
-                        duration: 1.5,
-                        ease: "easeInOut",
-                        delay: 0.2,
-                      }}
-                      style={{
-                        vectorEffect: "non-scaling-stroke",
-                        filter: `drop-shadow(0 0 5px ${skill.color})`,
-                      }}
-                    />
-                  </svg>
+                      {/* 3. THE NEON CORE (Should be THINNER) */}
+                      <motion.circle
+                        cx="50%"
+                        cy="50%"
+                        r="38"
+                        fill="none"
+                        stroke={skill.color}
+                        className="stroke-2 md:stroke-8" // Keep the core sharp and thin
+                        strokeLinecap="round"
+                        initial={{ pathLength: 0 }}
+                        whileInView={{ pathLength: skill.pct / 100 }}
+                        transition={{
+                          duration: 1.5,
+                          ease: "easeInOut",
+                          delay: 0.2,
+                        }}
+                        style={{
+                          vectorEffect: "non-scaling-stroke",
+                          filter: `drop-shadow(0 0 5px ${skill.color})`,
+                        }}
+                      />
+                    </svg>
 
-                  {/* ICON BOX */}
-                  <div className="absolute inset-2 rounded-full bg-[#03050a]/60 border border-white/5 flex items-center justify-center text-2xl backdrop-blur-sm transition-transform duration-500">
-                    {skill.icon}
+                    {/* ICON BOX */}
+                    <div className="absolute inset-2 rounded-full bg-[#03050a]/60 border border-white/5 flex items-center justify-center text-2xl backdrop-blur-sm transition-transform duration-500">
+                      {displayIcon}
+                    </div>
+
+                    {/* PERCENTAGE TAG */}
+                    <span className="absolute -bottom-1 -right-1 bg-[#090c14] border border-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-[#00e5ff] shadow-[0_0_10px_rgba(0,229,255,0.3)]">
+                      {skill.pct}%
+                    </span>
                   </div>
-
-                  {/* PERCENTAGE TAG */}
-                  <span className="absolute -bottom-1 -right-1 bg-[#090c14] border border-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-[#00e5ff] shadow-[0_0_10px_rgba(0,229,255,0.3)]">
-                    {skill.pct}%
-                  </span>
-                </div>
-                {/* <div className="relative shrink-0">
+                  {/* <div className="relative shrink-0">
                 <svg className="w-20 h-20 md:w-24 md:h-24 -rotate-90">
                   <circle
                     cx="50%"
@@ -245,8 +252,8 @@ const SkillSection = () => {
                 </span>
               </div> */}
 
-                {/* TEXT CONTENT */}
-                {/* <div className="flex-1 min-w-0">
+                  {/* TEXT CONTENT */}
+                  {/* <div className="flex-1 min-w-0">
                   <h3 className="font-brand font-bold text-white text-lg truncate">
                     {skill.name}
                   </h3>
@@ -259,41 +266,42 @@ const SkillSection = () => {
                     {skill.desc}
                   </p>
                 </div> */}
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-brand font-bold text-white text-lg truncate">
-                    {skill.name}
-                  </h3>
-                  <p className="text-[10px] uppercase tracking-widest text-[#00e5ff] mb-2">
-                    {skill.level}
-                  </p>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-brand font-bold text-white text-lg truncate">
+                      {skill.name}
+                    </h3>
+                    <p className="text-[10px] uppercase tracking-widest text-[#00e5ff] mb-2">
+                      {skill.level}
+                    </p>
 
-                  {/* THE REVEAL ENGINE */}
-                  <div
-                    className={`grid grid-rows-[1fr] transition-all duration-800 ease-in-out ${
-                      skill.wide
-                        ? "grid-rows-[1fr]"
-                        : "md:grid-rows-[0fr] md:group-hover:grid-rows-[1fr]"
-                    }`}
-                  >
-                    <div className="overflow-hidden">
-                      <p
-                        className={`text-sm text-gray-400 opacity-100 font-tech leading-relaxed transition-opacity duration-700 ${
-                          skill.wide
-                            ? "opacity-100"
-                            : "md:opacity-0  md:group-hover:opacity-100 delay-300"
-                        }`}
-                      >
-                        {skill.desc}
-                      </p>
+                    {/* THE REVEAL ENGINE */}
+                    <div
+                      className={`grid grid-rows-[1fr] transition-all duration-800 ease-in-out ${
+                        skill.wide
+                          ? "grid-rows-[1fr]"
+                          : "md:grid-rows-[0fr] md:group-hover:grid-rows-[1fr]"
+                      }`}
+                    >
+                      <div className="overflow-hidden">
+                        <p
+                          className={`text-sm text-gray-400 opacity-100 font-tech leading-relaxed transition-opacity duration-700 ${
+                            skill.wide
+                              ? "opacity-100"
+                              : "md:opacity-0  md:group-hover:opacity-100 delay-300"
+                          }`}
+                        >
+                          {skill.desc}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* AMBIENT GLOW OVERLAY */}
-              <div className="absolute inset-0 bg-linear-to-br from-[#00e5ff]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-            </motion.div>
-          ))}
+                {/* AMBIENT GLOW OVERLAY */}
+                <div className="absolute inset-0 bg-linear-to-br from-[#00e5ff]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>

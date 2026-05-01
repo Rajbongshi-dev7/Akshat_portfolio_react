@@ -55,7 +55,7 @@ const Navbar = () => {
                 to="builds"
                 smooth={true}
                 spy={true}
-                offset={-300}
+                offset={-200}
                 activeClass="!text-white !drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400  cursor-pointer hover:text-blue-300 transition-all"
               >
