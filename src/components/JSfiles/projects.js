@@ -1,15 +1,14 @@
 export const PROJECTS = [
   {
     id: 1,
-    title: "Quantum Architect",
-    category: "Web Environment",
+    title: "Typing Speed Analyzer",
+    category: "Keystroke Analytics Engine",
     description:
-      "A high-performance digital environment engineered to bridge the gap between creative storytelling and 3D logic. Optimized for sub-second load times and fluid motion systems.",
-    tech: ["React", "Three.js", "Framer Motion", "Tailwind"],
+      "A high-precision performance tool engineered to evaluate real-time linguistic input. Developed with a focus on event-driven architecture, it processes raw keystroke data to calculate WPM and accuracy metrics with zero-latency feedback. This project showcases the intersection of complex React state management and fluid, responsive UI systems.",
+    tech: ["React", "CSS", "HTML", "JavaScript"],
     image: "/projects/quantum.jpg", // Replace with your actual path
-    github: "https://github.com/doyal-rajbongshi",
-    link: "https://doyal.dev",
-    color: "#00e5ff",
+    github: "https://github.com/Rajbongshi-dev7",
+    link: "https://typing-speed-analyzer-fawn.vercel.app/",
   },
   {
     id: 2,
