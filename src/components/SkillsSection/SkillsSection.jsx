@@ -108,7 +108,7 @@ const SkillSection = () => {
           <h2 className="text-4xl md:text-6xl font-black text-white font-brand leading-none">
             Tools I wield with
             <br />
-            <span className="font-serif italic font-normal text-[#00e5ff]">
+            <span className="font-mono italic font-normal text-[#00e5ff]">
               precision
             </span>
           </h2>

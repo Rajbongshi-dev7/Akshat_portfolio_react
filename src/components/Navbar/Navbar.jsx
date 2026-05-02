@@ -52,7 +52,7 @@ const Navbar = () => {
                 /stack
               </Link>
               <Link
-                to="builds"
+                to="projects"
                 smooth={true}
                 spy={true}
                 offset={-200}
