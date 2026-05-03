@@ -206,66 +206,7 @@ const SkillSection = () => {
                       {skill.pct}%
                     </span>
                   </div>
-                  {/* <div className="relative shrink-0">
-                <svg className="w-20 h-20 md:w-24 md:h-24 -rotate-90">
-                  <circle
-                    cx="50%"
-                    cy="50%"
-                    r="38"
-                    fill="none"
-                    strokeLinecap="round"
-                    initial={{ pathLength: 0 }}
-                    whileInView={{ pathLength: skill.pct / 100 }}
-                    stroke="none"
-                    strokeWidth="5"
-                    style={{
-                      filter: "blur(5px)",
-                      opacity: 0.4,
-                    }}
-                    // className="fill-none stroke-white/5 stroke-4"
-                  />
-                  <motion.circle
-                    cx="50%"
-                    cy="50%"
-                    r="38"
-                    fill="none"
-                    stroke={skill.color}
-                    strokeWidth="3"
-                    strokeLinecap="round"
-                    initial={{ pathLength: 0 }}
-                    whileInView={{ pathLength: skill.pct / 100 }}
-                    transition={{
-                      duration: 1.5,
-                      ease: "easeInOut",
-                      delay: 0.2,
-                    }}
-                    style={{
-                      filter: `drop-shadow(0 0 15px ${skill.color})`,
-                    }}
-                  />
-                </svg>
-                <div className="absolute inset-2 rounded-full bg-[#03050a]/40 border border-white/5  flex items-center justify-center text-2xl transition-transform duration-300">
-                  {skill.icon}
-                </div>
-                <span className="absolute -bottom-1 -right-1 bg-[#090c14] border border-white/10 px-2 py-0.5 rounded-full text-[10px] font-bold text-[#00e5ff]">
-                  {skill.pct}%
-                </span>
-              </div> */}
 
-                  {/* TEXT CONTENT */}
-                  {/* <div className="flex-1 min-w-0">
-                  <h3 className="font-brand font-bold text-white text-lg truncate">
-                    {skill.name}
-                  </h3>
-                  <p className="text-[10px] uppercase tracking-widest text-[#00e5ff] mb-2">
-                    {skill.level}
-                  </p>
-                  <p
-                    className={`text-sm text-gray-400 font-light font-tech leading-relaxed   duration-400   ${!skill.wide && "hidden group-hover:block"}`}
-                  >
-                    {skill.desc}
-                  </p>
-                </div> */}
                   <div className="flex-1 min-w-0">
                     <h3 className="font-brand font-bold text-white text-lg truncate">
                       {skill.name}

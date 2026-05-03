@@ -118,7 +118,7 @@ const ProjectsSection = () => {
                   {item.title}
                 </h3>
                 <h4 className="text-fuchsia-500">{item.tech.join(" ")}</h4>
-                <div className=" grid grid-rows-[0fr] transition-all ease-in-out duration-500 group-hover:grid-rows-[1fr]">
+                <div className=" grid grid-rows-[0fr] transition-all ease-in-out translate-y-3/2 group-hover:translate-y-0 duration-700 group-hover:grid-rows-[1fr]">
                   <h6 className="opacity-0 group-hover:opacity-100 transition-opacity">
                     {item.description}
                   </h6>
