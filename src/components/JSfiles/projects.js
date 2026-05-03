@@ -9,7 +9,7 @@ export const PROJECTS = [
     description:
       "A high-precision performance tool engineered to evaluate real-time linguistic input. Developed with a focus on event-driven architecture, it processes raw keystroke data to calculate WPM and accuracy metrics with zero-latency feedback. This project showcases the intersection of complex React state management and fluid, responsive UI systems.",
     tech: ["React", "CSS", "HTML", "JavaScript"],
-    image: typingSpeedAnalyzer, // Replace with your actual path
+    image: typingSpeedAnalyzer,
     github:
       "https://github.com/Rajbongshi-dev7/typing-speed-analyzer_react-version",
     link: "https://typing-speed-analyzer-fawn.vercel.app/",

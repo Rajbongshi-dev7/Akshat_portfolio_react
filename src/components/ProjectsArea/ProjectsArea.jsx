@@ -112,11 +112,17 @@ const ProjectsSection = () => {
             >
               <div
                 style={{ backgroundImage: `url(${item.image})` }}
-                className={`p-8 h-full flex flex-col  justify-end bg-no-repeat bg-cover`}
+                className={`p-8 h-full flex flex-col   justify-end bg-no-repeat w-full bg-cover`}
               >
-                <h3 className="text-lg font-bold text-white">
-                  Module {item.description}
+                <h3 className="text-lg font-bold text-gray-400">
+                  {item.title}
                 </h3>
+                <h4 className="text-fuchsia-500">{item.tech.join(" ")}</h4>
+                <div className=" grid grid-rows-[0fr] transition-all ease-in-out duration-500 group-hover:grid-rows-[1fr]">
+                  <h6 className="opacity-0 group-hover:opacity-100 transition-opacity">
+                    {item.description}
+                  </h6>
+                </div>
               </div>
             </motion.div>
           ))}
