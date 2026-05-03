@@ -7,20 +7,20 @@ export const PROJECTS = [
       "A high-precision performance tool engineered to evaluate real-time linguistic input. Developed with a focus on event-driven architecture, it processes raw keystroke data to calculate WPM and accuracy metrics with zero-latency feedback. This project showcases the intersection of complex React state management and fluid, responsive UI systems.",
     tech: ["React", "CSS", "HTML", "JavaScript"],
     image: "/projects/quantum.jpg", // Replace with your actual path
-    github: "https://github.com/Rajbongshi-dev7",
+    github:
+      "https://github.com/Rajbongshi-dev7/typing-speed-analyzer_react-version",
     link: "https://typing-speed-analyzer-fawn.vercel.app/",
   },
   {
     id: 2,
-    title: "Neon Nexus",
-    category: "System Architecture",
+    title: "Weather App",
+    category: "Real-time Data Interface",
     description:
-      "Translating abstract design concepts into production-ready reality. This project features complex SVG manipulation and stacked glow filters for an immersive user experience.",
-    tech: ["Next.js", "SVG Logic", "GSAP", "PostgreSQL"],
+      "A high-performance weather environment engineered with Vanilla JavaScript and CSS3. This project focuses on the precise synchronization of asynchronous API streams and dynamic DOM manipulation. It demonstrates a disciplined approach to state management, featuring custom neon-fused UI patterns and responsive SVG logic without the overhead of modern frameworks.",
+    tech: ["JS", "CSS3", "HTML"],
     image: "/projects/neon.jpg",
-    github: "https://github.com/doyal-rajbongshi",
-    link: "https://doyal.dev",
-    color: "#ff0055",
+    github: "https://github.com/Rajbongshi-dev7/WeatherApp",
+    link: "https://weatherapp-ten-liart.vercel.app/",
   },
   {
     id: 3,
