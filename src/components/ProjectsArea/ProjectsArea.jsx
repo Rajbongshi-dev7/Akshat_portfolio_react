@@ -110,7 +110,10 @@ const ProjectsSection = () => {
               transition={{ delay: 0.1 + idx * 0.1 }} // Staggered entrance
               className="md:col-span-4 group relative h-75 overflow-hidden  rounded-[30px] border border-white/5 bg-white/2 backdrop-blur-xl hover:bg-white/5 transition-colors"
             >
-              <div className="p-8 h-full flex flex-col justify-end">
+              <div
+                style={{ backgroundImage: `url(${item.image})` }}
+                className={`p-8 h-full flex flex-col  justify-end bg-no-repeat bg-cover`}
+              >
                 <h3 className="text-lg font-bold text-white">
                   Module {item.description}
                 </h3>
