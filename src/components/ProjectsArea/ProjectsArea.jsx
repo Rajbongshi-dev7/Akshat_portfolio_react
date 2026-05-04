@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PROJECTS } from "../JSfiles/projects";
+import { span } from "framer-motion/client";
 
 const ProjectsSection = () => {
   // Animation Variants
@@ -112,17 +113,53 @@ const ProjectsSection = () => {
             >
               <div
                 style={{ backgroundImage: `url(${item.image})` }}
-                className={`p-8 h-full flex flex-col   justify-end bg-no-repeat w-full bg-cover`}
+                className={`p-8 h-full absolute flex flex-col justify-baseline bg-no-repeat w-full bg-cover`}
               >
-                <h3 className="text-lg font-bold text-gray-400">
+                <div className=" mt-auto ">
+                  <h3 className="text-lg font-bold text-gray-400">
+                    {item.title}
+                  </h3>
+                  <h4 className="text-fuchsia-500 ">
+                    {item.tech.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="border px-2 py-1 border-red-500 mx-2 font-mono rounded-2xl"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </h4>
+                </div>
+              </div>
+              <div className="relative w-full  transition-all ease-in-out translate-y-3/2 group-hover:translate-y-0 duration-700 ">
+                <h4 className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  {item.tech.map((tech, index) => (
+                    <span
+                      key={index}
+                      className="border px-2 py-1 border-red-500 mx-2 font-mono rounded-2xl"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </h4>
+                <h3 className="opacity-0 group-hover:opacity-100 transition-opacity">
                   {item.title}
                 </h3>
-                <h4 className="text-fuchsia-500">{item.tech.join(" ")}</h4>
-                <div className=" grid grid-rows-[0fr] transition-all ease-in-out translate-y-3/2 group-hover:translate-y-0 duration-700 group-hover:grid-rows-[1fr]">
-                  <h6 className="opacity-0 group-hover:opacity-100 transition-opacity">
-                    {item.description}
-                  </h6>
-                </div>
+                <p className="opacity-0 group-hover:opacity-100 transition-opacity">
+                  {item.description}
+                </p>
+                <a
+                  className="opacity-0 group-hover:opacity-100 border px-2 py-1 border-red-500 rounded-2xl uppercase font-tech tracking-tight transition-opacity"
+                  href={item.link}
+                >
+                  Live Preview
+                </a>
+                <a
+                  className="opacity-0 group-hover:opacity-100 border px-2 py-1 border-red-500 rounded-2xl uppercase font-tech tracking-tight transition-opacity"
+                  href={item.github}
+                >
+                  Github
+                </a>
               </div>
             </motion.div>
           ))}
