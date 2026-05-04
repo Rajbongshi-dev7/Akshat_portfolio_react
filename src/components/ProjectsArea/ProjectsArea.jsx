@@ -113,7 +113,7 @@ const ProjectsSection = () => {
             >
               <div
                 style={{ backgroundImage: `url(${item.image})` }}
-                className={`p-8 h-full absolute flex flex-col justify-baseline bg-no-repeat w-full bg-cover`}
+                className={`p-8 h-full absolute flex flex-col justify-baseline bg-no-repeat w-full bg-cover bg-center`}
               >
                 <div className=" mt-auto ">
                   <h3 className="text-lg font-bold text-gray-400">
@@ -131,7 +131,9 @@ const ProjectsSection = () => {
                   </h4>
                 </div>
               </div>
-              <div className="relative w-full  transition-all ease-in-out translate-y-3/2 group-hover:translate-y-0 duration-700 ">
+              <div
+                className={`relative w-full h-60 ${item.dark ? " bg-red-500" : "bg-blue-950"}  transition-all ease-in-out translate-y-4/2 group-hover:translate-y-2/5 duration-700`}
+              >
                 <h4 className="opacity-0 group-hover:opacity-100 transition-opacity">
                   {item.tech.map((tech, index) => (
                     <span
