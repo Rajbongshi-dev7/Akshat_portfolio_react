@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PROJECTS } from "../JSfiles/projects";
-import { span } from "framer-motion/client";
 
 const ProjectsSection = () => {
   // Animation Variants
@@ -132,22 +131,22 @@ const ProjectsSection = () => {
                 </div>
               </div>
               <div
-                className={`relative w-full h-60 ${item.dark ? " bg-red-500" : "bg-blue-950"}  transition-all ease-in-out translate-y-4/2 group-hover:translate-y-2/5 duration-700`}
+                className={`relative w-full h-60 p-4 text-white ${item.dark ? " bg-[#403f49]" : "bg-[#3a384b]"}  transition-all ease-in-out translate-y-4/2 border-t border-t-blue-400 group-hover:translate-y-2/5 duration-700`}
               >
-                <h4 className="opacity-0 group-hover:opacity-100 transition-opacity">
+                <h4 className="opacity-0 group-hover:opacity-100  transition-opacity">
                   {item.tech.map((tech, index) => (
                     <span
                       key={index}
-                      className="border px-2 py-1 border-red-500 mx-2 font-mono rounded-2xl"
+                      className="border  mx-2 ml-0 px-2  py-1 border-red-500 font-mono rounded-2xl"
                     >
                       {tech}
                     </span>
                   ))}
                 </h4>
-                <h3 className="opacity-0 group-hover:opacity-100 transition-opacity">
+                <h3 className="opacity-0 font-brand group-hover:opacity-100 transition-opacity">
                   {item.title}
                 </h3>
-                <p className="opacity-0 group-hover:opacity-100 transition-opacity">
+                <p className="opacity-0 leading-5 group-hover:opacity-100 transition-opacity">
                   {item.description}
                 </p>
                 <a
