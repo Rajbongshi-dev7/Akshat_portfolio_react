@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { PROJECTS } from "../JSfiles/projects";
+import { MdArrowOutward } from "react-icons/md";
 
 const ProjectsSection = () => {
   // Animation Variants
@@ -34,7 +35,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="projects"
-      className="w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-[#112b31]"
+      className="w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-[#060f27]"
     >
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
@@ -122,7 +123,7 @@ const ProjectsSection = () => {
                     {item.tech.map((tech, index) => (
                       <span
                         key={index}
-                        className="border px-2 py-1 border-red-500 mx-2 font-mono rounded-2xl"
+                        className={`border px-2 py-0.5 border-black  ${item.dark ? " bg-[#14dbe9] text-black" : "bg-black text-cyan-400"} group-hover:opacity-0 shadow drop-shadow-2xl mx-2 transition-opacity duration-600 font-mono rounded-2xl`}
                       >
                         {tech}
                       </span>
@@ -131,36 +132,48 @@ const ProjectsSection = () => {
                 </div>
               </div>
               <div
-                className={`relative w-full h-60 p-4 text-white ${item.dark ? " bg-[#403f49]" : "bg-[#3a384b]"}  transition-all ease-in-out translate-y-4/2 border-t border-t-blue-400 group-hover:translate-y-2/5 duration-700`}
+                className={`relative w-full h-60 p-4 pt-2 text-white bg-[#0704b4e1]  transition-all ease-in-out translate-y-4/2 border-t border-t-blue-400 group-hover:translate-y-1/3 duration-700`}
               >
                 <h4 className="opacity-0 group-hover:opacity-100  transition-opacity">
                   {item.tech.map((tech, index) => (
                     <span
                       key={index}
-                      className="border  mx-2 ml-0 px-2  py-1 border-red-500 font-mono rounded-2xl"
+                      className="border text-cyan-400 text-sm  mx-2 ml-0 px-2  py-0.5 bg-[#00000091] border-black shadow drop-shadow-xl font-mono rounded-2xl"
                     >
                       {tech}
                     </span>
                   ))}
                 </h4>
-                <h3 className="opacity-0 font-brand group-hover:opacity-100 transition-opacity">
+                <h3 className="opacity-0 font-brand mt-1 group-hover:opacity-100 transition-opacity">
                   {item.title}
                 </h3>
-                <p className="opacity-0 leading-5 group-hover:opacity-100 transition-opacity">
+                <p className="opacity-0 leading-5 font-mono tracking-tight text-gray-400 group-hover:opacity-100 transition-opacity">
                   {item.description}
                 </p>
-                <a
-                  className="opacity-0 group-hover:opacity-100 border px-2 py-1 border-red-500 rounded-2xl uppercase font-tech tracking-tight transition-opacity"
-                  href={item.link}
-                >
-                  Live Preview
-                </a>
-                <a
-                  className="opacity-0 group-hover:opacity-100 border px-2 py-1 border-red-500 rounded-2xl uppercase font-tech tracking-tight transition-opacity"
-                  href={item.github}
-                >
-                  Github
-                </a>
+                <div className="flex flex-row mt-2 gap-3">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-0 flex items-center bg-black group-hover:opacity-100 border px-2 py-0.5 border-red-600 shadow drop-shadow-2xl rounded-2xl uppercase text-sm font-tech tracking-tight transition-opacity"
+                    href={item.link}
+                  >
+                    Live Preview
+                    <span className="ml-1">
+                      <MdArrowOutward />
+                    </span>
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-0 flex items-center bg-black group-hover:opacity-100 border px-2 py-0.5 border-red-600 shadow drop-shadow-2xl rounded-2xl uppercase text-sm font-tech tracking-tight transition-opacity"
+                    href={item.github}
+                  >
+                    Github
+                    <span className="ml-1">
+                      <MdArrowOutward />
+                    </span>
+                  </a>
+                </div>
               </div>
             </motion.div>
           ))}

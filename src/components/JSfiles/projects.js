@@ -7,8 +7,8 @@ export const PROJECTS = [
     title: "Typing Speed Analyzer",
     category: "Keystroke Analytics Engine",
     description:
-      "A high-precision performance tool engineered to evaluate real-time linguistic input. Developed with a focus on event-driven architecture, it processes raw keystroke data to calculate WPM and accuracy metrics.",
-    tech: ["React", "CSS", "HTML", "JavaScript"],
+      "A high-precision performance tool engineered to evaluate real-time linguistic input. Developed with a focus on event-driven architecture, it processes keystroke data to calculate WPM and accuracy metrics.",
+    tech: ["React", "CSS", "HTML", "JS"],
     image: typingSpeedAnalyzer,
     dark: true,
     github:
@@ -21,7 +21,7 @@ export const PROJECTS = [
     category: "Real-time Data Interface",
     description:
       "A high-performance weather environment engineered with Vanilla JavaScript and CSS3. This project focuses on the precise synchronization of asynchronous API streams and dynamic DOM manipulation.",
-    tech: ["JS", "CSS3", "HTML"],
+    tech: ["JS", "CSS", "HTML"],
     image: weatherApp,
     dark: false,
     github: "https://github.com/Rajbongshi-dev7/WeatherApp",
