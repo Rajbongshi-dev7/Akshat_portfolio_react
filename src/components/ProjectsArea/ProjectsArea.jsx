@@ -115,15 +115,17 @@ const ProjectsSection = () => {
                 style={{ backgroundImage: `url(${item.image})` }}
                 className={`p-8 h-full absolute flex flex-col justify-baseline bg-no-repeat w-full bg-cover bg-center`}
               >
-                <div className=" mt-auto ">
-                  <h3 className="text-lg font-bold text-gray-400">
+                <div className=" mt-auto mb-4 ">
+                  <h3
+                    className={`text-xl group-hover:opacity-0 transition-opacity duration-600 font-bold mb-3 ${item.dark ? "text-white" : "text-black"}`}
+                  >
                     {item.title}
                   </h3>
                   <h4 className="text-fuchsia-500 ">
                     {item.tech.map((tech, index) => (
                       <span
                         key={index}
-                        className={`border px-2 py-0.5 border-black  ${item.dark ? " bg-[#14dbe9] text-black" : "bg-black text-cyan-400"} group-hover:opacity-0 shadow drop-shadow-2xl mx-2 transition-opacity duration-600 font-mono rounded-2xl`}
+                        className={`border px-2 py-0.5 border-black  bg-black text-cyan-400 group-hover:opacity-0 shadow drop-shadow-2xl mx-2 ml-0 transition-opacity duration-600 font-mono rounded-2xl`}
                       >
                         {tech}
                       </span>

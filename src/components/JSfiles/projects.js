@@ -23,7 +23,7 @@ export const PROJECTS = [
       "A high-performance weather environment engineered with Vanilla JavaScript and CSS3. This project focuses on the precise synchronization of asynchronous API streams and dynamic DOM manipulation.",
     tech: ["JS", "CSS", "HTML"],
     image: weatherApp,
-    dark: false,
+    dark: true,
     github: "https://github.com/Rajbongshi-dev7/WeatherApp",
     link: "https://weatherapp-ten-liart.vercel.app/",
   },
