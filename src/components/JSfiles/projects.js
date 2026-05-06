@@ -32,11 +32,11 @@ export const PROJECTS = [
     title: "Restraurant",
     category: "eCommerce",
     description:
-      "A sleek, responsive restaurant landing page built with vanilla HTML, CSS, and JavaScript, featuring smooth navigation and optimized layouts for modern digital menus.",
+      "A sleek, responsive restaurant landing page built with vanilla HTML, CSS, and JavaScript, featuring smooth navigation and optimized layouts for modern digital menus and a premium user experience.",
     tech: ["HTML", "CSS", "JS"],
     image: restraurant,
     dark: true,
     github: "https://github.com/Rajbongshi-dev7/Restraurant",
-    link: "https://restraurant-mu.vercel.app/",
+    link: "https://restraurantthetasteat.vercel.app/",
   },
 ];
