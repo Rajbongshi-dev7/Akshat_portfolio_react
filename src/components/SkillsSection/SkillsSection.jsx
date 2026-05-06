@@ -7,63 +7,6 @@ const Icon = {
   react: <FaReact color="#00FFFF" />,
 };
 
-// const SKILLS = [
-//   {
-//     name: "HTML5",
-//     level: "Expert",
-//     pct: 90,
-//     icon: "🏗️",
-//     color: "#00e5ff",
-//     desc: "Semantic markup, accessibility-first structure, SEO-conscious foundations built to last",
-//     wide: true,
-//   },
-//   {
-//     name: "CSS3",
-//     level: "Advanced",
-//     pct: 85,
-//     icon: "🎨",
-//     color: "#a78bfa",
-//     desc: "Flexbox, Grid, keyframes, custom properties and responsive mastery.",
-//     wide: false,
-//   },
-//   {
-//     name: "Tailwind",
-//     level: "Advanced",
-//     pct: 80,
-//     icon: "💨",
-//     color: "#38bdf8",
-//     desc: "Utility-first rapid development and design systems.",
-//     wide: false,
-//   },
-//   {
-//     name: "JavaScript",
-//     level: "Proficient",
-//     pct: 75,
-//     icon: "⚡",
-//     color: "#fbbf24",
-//     desc: "ES6+, DOM mastery, async/await, Fetch API, event-driven patterns.",
-//     wide: false,
-//   },
-//   {
-//     name: "React.js",
-//     level: "Learning . Growing Fast",
-//     pct: 65,
-//     icon: <FaReact color="#00FFFF" />,
-//     color: "#fb7185",
-//     desc: "Component architecture, hooks, state management, JSX — actively building projects to level up every week.",
-//     wide: true,
-//   },
-//   {
-//     name: "Dev Tools",
-//     level: "Proficient",
-//     pct: 70,
-//     icon: "🔧",
-//     color: "#34d399",
-//     desc: "Git, VS Code, Dev Tools and Figma basics.",
-//     wide: false,
-//   },
-// ];
-
 const SkillSection = () => {
   const container = {
     hidden: { opacity: 0 },

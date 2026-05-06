@@ -1,6 +1,6 @@
 import typingSpeedAnalyzer from "../../assets/typing_speed_analyzer.png";
 import weatherApp from "../../assets/weatherApp.png";
-import placeholder_img from "../../assets/placeholder_img.png";
+import restraurant from "../../assets/restraurant.png";
 export const PROJECTS = [
   {
     id: 1,
@@ -29,15 +29,14 @@ export const PROJECTS = [
   },
   {
     id: 3,
-    title: "The Arsenal v2",
-    category: "Micro-Component Engine",
+    title: "Restraurant",
+    category: "eCommerce",
     description:
-      "A modular library of interactive skill-mapping components, utilizing non-scaling strokes and responsive coordinate systems for consistent cross-device performance.",
-    tech: ["React", "TypeScript", "Node.js"],
-    image: placeholder_img,
-    dark: false,
-    github: "https://github.com/doyal-rajbongshi",
-    link: "https://doyal.dev",
-    color: "#7000ff",
+      "A sleek, responsive restaurant landing page built with vanilla HTML, CSS, and JavaScript, featuring smooth navigation and optimized layouts for modern digital menus.",
+    tech: ["HTML", "CSS", "JS"],
+    image: restraurant,
+    dark: true,
+    github: "https://github.com/Rajbongshi-dev7/Restraurant",
+    link: "https://restraurant-mu.vercel.app/",
   },
 ];
