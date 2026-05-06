@@ -34,7 +34,7 @@ const ProjectsSection = () => {
 
   return (
     <section
-      id="projects"
+      id="builds"
       className="w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-[#060f27]"
     >
       <div className="max-w-7xl mx-auto">
@@ -108,7 +108,7 @@ const ProjectsSection = () => {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              transition={{ delay: 0.1 + idx * 0.1 }} // Staggered entrance
+              transition={{ delay: idx * 0.1 }} // Staggered entrance
               className="md:col-span-4 group relative h-75 overflow-hidden  rounded-[30px] border border-white/5 bg-white/2 backdrop-blur-xl hover:bg-white/5 transition-colors"
             >
               <div

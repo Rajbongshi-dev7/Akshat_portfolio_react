@@ -32,11 +32,11 @@ const About = () => {
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeIn" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
-              scale: 1.05,
-              transition: { duration: 0.4, ease: "easeOut" },
+              scale: 1.02,
+              transition: { duration: 0.5, ease: "easeOut" },
             }}
             viewport={{ once: true }}
             className="md:col-span-7 w-full lg:col-span-7 md:row-span-3 lg:row-span-3 bg-[#1c1c1e]/40 border border-white/5 p-3 lg:p-10 rounded-[2.5rem] flex flex-col justify-between hover:border-blue-500 relative  group"
@@ -111,11 +111,11 @@ const About = () => {
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeIn" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
-              scale: 1.05,
-              transition: { duration: 0.4, ease: "easeOut" },
+              scale: 1.02,
+              transition: { duration: 0.5, ease: "easeOut" },
             }}
             viewport={{ once: true }}
             className=" md:col-span-5 md:col-start-8 md:row-span-1 bg-[#1c1c1e]/40 border hover:border-blue-500 border-white/5 p-8 rounded-4xl"
@@ -146,11 +146,11 @@ const About = () => {
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeIn" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
-              scale: 1.05,
-              transition: { duration: 0.4, ease: "easeOut" },
+              scale: 1.02,
+              transition: { duration: 0.5, ease: "easeOut" },
             }}
             viewport={{ once: true }}
             className=" md:col-span-5 md:col-start-8  bg-[#1c1c1e]/40 border  border-white/5 hover:border-blue-500 p-8 rounded-4xl flex flex-col justify-center"
@@ -169,11 +169,11 @@ const About = () => {
             variants={item}
             initial={{ opacity: 0, y: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, ease: "easeIn" }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
-              scale: 1.05,
-              transition: { duration: 0.4, ease: "easeOut" },
+              scale: 1.02,
+              transition: { duration: 0.5, ease: "easeOut" },
             }}
             viewport={{ once: true }}
             href="mailto:doyalrajbs7@gmail.com?subject=Initiate Build: Project Inquiry"
