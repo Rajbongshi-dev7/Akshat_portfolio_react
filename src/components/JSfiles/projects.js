@@ -37,6 +37,6 @@ export const PROJECTS = [
     image: restraurant,
     dark: true,
     github: "https://github.com/Rajbongshi-dev7/Restraurant",
-    link: "https://restraurantthetasteat.vercel.app/",
+    link: "https://restraurant-omega.vercel.app/",
   },
 ];
