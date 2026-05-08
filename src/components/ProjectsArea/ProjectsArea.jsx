@@ -35,7 +35,7 @@ const ProjectsSection = () => {
   return (
     <section
       id="builds"
-      className="w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-[#060f27]"
+      className="w-full px-6 sm:px-16  md:px-24 lg:px-30 mx-auto py-24 bg-[#060f27]"
     >
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
