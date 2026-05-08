@@ -10,7 +10,7 @@ const Navbar = () => {
   }, []);
   return (
     <div className=" bg-[#181b29]">
-      <nav className="fixed top-0 left-0 right-0 mx-auto px-6 sm:px-16 md:px-24 lg:px-30 z-2 bg-[#181b29] border-b border-white/5 backdrop-blur-md flex justify-center">
+      <nav className="fixed top-0 left-0 right-0 mx-auto px-6 sm:px-16 md:px-24 lg:px-30 z-50 bg-[#181b29] border-b border-white/5 backdrop-blur-md flex justify-center">
         <div className=" w-full lg:max-w-7xl   h-20 flex items-center justify-between">
           {/* Logo Section */}
           <div className="flex items-center gap-2">
