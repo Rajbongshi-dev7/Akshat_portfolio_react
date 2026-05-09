@@ -134,9 +134,9 @@ const ProjectsSection = () => {
                 </div>
               </div>
               <div
-                className={`relative w-full h-60 p-4 pt-2 text-white bg-[#060F27]  transition-all ease-in-out translate-y-4/2 border-t border-t-blue-400 group-hover:translate-y-1/3 duration-700`}
+                className={`relative w-full h-60 p-4 pt-2 text-white bg-[#060F27]  transition-all ease-in-out translate-y-4/2 border-t border-t-blue-400 group-hover:translate-y-1/3 duration-800`}
               >
-                <h4 className="opacity-0 group-hover:opacity-100  transition-opacity">
+                <h4 className="opacity-0 group-hover:opacity-100 duration-1000  transition-opacity">
                   {item.tech.map((tech, index) => (
                     <span
                       key={index}
@@ -146,10 +146,10 @@ const ProjectsSection = () => {
                     </span>
                   ))}
                 </h4>
-                <h3 className="opacity-0 font-brand mt-1 group-hover:opacity-100 transition-opacity">
+                <h3 className="opacity-0 font-brand mt-1 group-hover:opacity-100 duration-1000 transition-opacity">
                   {item.title}
                 </h3>
-                <p className="opacity-0 leading-5 font-mono tracking-tight text-gray-400 group-hover:opacity-100 transition-opacity">
+                <p className="opacity-0 leading-5 font-mono tracking-tight text-gray-400 group-hover:opacity-100 transition-opacity duration-1000">
                   {item.description}
                 </p>
                 <div className="flex flex-row mt-2 gap-3">
