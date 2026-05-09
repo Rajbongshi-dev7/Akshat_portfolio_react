@@ -69,7 +69,7 @@ const ProjectsSection = () => {
             variants={leftSlide}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, margin: "-100px", amount: 0.25 }}
+            viewport={{ once: true, margin: "-20px", amount: 0.05 }}
             className="md:col-span-8 group relative min-h-100 overflow-hidden rounded-[30px] border border-white/5 bg-white/2 backdrop-blur-xl"
           >
             <div className="absolute inset-0 bg-linear-to-br from-[#00e5ff]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -89,7 +89,7 @@ const ProjectsSection = () => {
             variants={rightSlide}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, margin: "-100px", amount: 0.25 }}
+            viewport={{ once: true, margin: "-20px", amount: 0.05 }}
             className="md:col-span-4 group relative min-h-100 overflow-hidden rounded-[30px] border border-white/5 bg-white/2 backdrop-blur-xl"
           >
             <div className="p-8 h-full flex flex-col justify-end">

@@ -7,6 +7,7 @@ import ProjectsArea from "./components/ProjectsArea/ProjectsArea";
 import StatusRibbon from "./components/StatusRibbon/StatusRibbon";
 import About from "./components/About/About";
 import SkillsSection from "./components/SkillsSection/SkillsSection";
+import WhyMe from "./components/Why me/WhyMe";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <StatusRibbon />
       <SkillsSection />
       <ProjectsArea />
+      <WhyMe />
       <MobileMenu />
     </>
   );
