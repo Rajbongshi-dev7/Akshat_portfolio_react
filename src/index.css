@@ -10,6 +10,10 @@
   padding: 0px; */
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 .active {
   color: #0704b4e1;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);

@@ -6,7 +6,7 @@ import { MdArrowOutward } from "react-icons/md";
 const ProjectsSection = () => {
   // Animation Variants
   const leftSlide = {
-    hidden: { x: -400, opacity: 0 },
+    hidden: { x: -300, opacity: 0 },
     show: {
       x: 0,
       opacity: 1,
@@ -15,7 +15,7 @@ const ProjectsSection = () => {
   };
 
   const rightSlide = {
-    hidden: { x: 400, opacity: 0 },
+    hidden: { x: 300, opacity: 0 },
     show: {
       x: 0,
       opacity: 1,
@@ -69,8 +69,8 @@ const ProjectsSection = () => {
             variants={leftSlide}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, margin: "-20px", amount: 0.05 }}
-            className="md:col-span-8 group relative min-h-100 overflow-hidden rounded-[30px] border border-white/5 bg-white/2 backdrop-blur-xl"
+            viewport={{ once: true, margin: "-15px", amount: 0 }}
+            className="md:col-span-7 group relative min-h-100 overflow-hidden rounded-[30px] border border-white/5 bg-white/2 backdrop-blur-xl"
           >
             <div className="absolute inset-0 bg-linear-to-br from-[#00e5ff]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="p-8 h-full flex flex-col justify-end relative z-10">
@@ -89,8 +89,8 @@ const ProjectsSection = () => {
             variants={rightSlide}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, margin: "-20px", amount: 0.05 }}
-            className="md:col-span-4 group relative min-h-100 overflow-hidden rounded-[30px] border border-white/5 bg-white/2 backdrop-blur-xl"
+            viewport={{ once: true, margin: "-15px", amount: 0 }}
+            className="md:col-span-5 group relative min-h-100 overflow-hidden rounded-[30px] border border-white/5 bg-white/2 backdrop-blur-xl"
           >
             <div className="p-8 h-full flex flex-col justify-end">
               <p className="text-gray-500 font-tech text-xs uppercase tracking-widest mb-2">

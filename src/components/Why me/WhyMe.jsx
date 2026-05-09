@@ -41,7 +41,7 @@ const WhyMe = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="group relative p-8 rounded-[2rem] border border-white/5 bg-white/2 backdrop-blur-xl hover:border-[#00e5ff]/30 transition-all duration-500"
+            className="group relative p-8 rounded-4xl border border-white/5 bg-white/2 backdrop-blur-xl hover:border-[#00e5ff]/30 transition-all duration-500"
           >
             <div className="text-[#00e5ff] font-tech text-xs mb-6 tracking-widest">
               /01_PERFORMANCE
@@ -75,7 +75,7 @@ const WhyMe = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="group relative p-8 rounded-[2rem] border border-white/5 bg-white/2 backdrop-blur-xl hover:border-[#00e5ff]/30 transition-all duration-500"
+            className="group relative p-8 rounded-4xl border border-white/5 bg-white/2 backdrop-blur-xl hover:border-[#00e5ff]/30 transition-all duration-500"
           >
             <div className="text-[#00e5ff] font-tech text-xs mb-6 tracking-widest">
               /02_ADAPTIVE
@@ -110,7 +110,7 @@ const WhyMe = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="group relative p-8 rounded-[2rem] border border-white/5 bg-white/2 backdrop-blur-xl hover:border-[#00e5ff]/30 transition-all duration-500"
+            className="group relative p-8 rounded-4xl border border-white/5 bg-white/2 backdrop-blur-xl hover:border-[#00e5ff]/30 transition-all duration-500"
           >
             <div className="text-[#00e5ff] font-tech text-xs mb-6 tracking-widest">
               /03_SCALABILITY

@@ -34,7 +34,7 @@ const Navbar = () => {
               <Link
                 to="about"
                 smooth={true}
-                offset={-100}
+                offset={-150}
                 spy={true}
                 activeClass="text-white drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400 cursor-pointer hover:text-blue-300 transition-all"
@@ -44,7 +44,7 @@ const Navbar = () => {
               <Link
                 to="skills"
                 smooth={true}
-                offset={-100}
+                offset={-200}
                 spy={true}
                 activeClass="text-white drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400 cursor-pointer hover:text-blue-300 transition-all"
@@ -55,7 +55,7 @@ const Navbar = () => {
                 to="builds"
                 smooth={true}
                 spy={true}
-                offset={-100}
+                offset={-200}
                 activeClass="!text-white !drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400  cursor-pointer hover:text-blue-300 transition-all"
               >
@@ -65,7 +65,7 @@ const Navbar = () => {
                 to="why-me"
                 smooth={true}
                 spy={true}
-                offset={-100}
+                offset={-200}
                 activeClass="text-white drop-shadow-glow" // This replaces your 'active' logic!
                 className="font-tech text-gray-400 cursor-pointer hover:text-blue-300 transition-all"
               >
