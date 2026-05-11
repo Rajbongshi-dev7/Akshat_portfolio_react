@@ -7,40 +7,44 @@ const MobileMenu = () => {
       {/* links for small device */}
       <div className="md:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-[90%] max-w-100 h-14 bg-[#131314]/90 backdrop-blur-xl border border-white/10 rounded-2xl flex items-center justify-around px-4 z-50 shadow-2xl">
         <Link
-          to="builds"
+          to="about"
           smooth={true}
+          offset={-100}
           spy={true}
-          activeClass="text-blue-300"
-          className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
-        >
-          builds
-        </Link>
-        <Link
-          to="About"
-          smooth={true}
-          spy={true}
-          activeClass="text-blue-300"
+          activeClass="text-white"
           className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
         >
           about
         </Link>
         <Link
-          to="stack"
+          to="skills"
           smooth={true}
+          offset={-100}
           spy={true}
-          activeClass="text-blue-300"
+          activeClass="text-white"
           className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
         >
           stack
         </Link>
         <Link
-          to="proof"
+          to="builds"
           smooth={true}
+          offset={-50}
           spy={true}
-          activeClass="text-blue-300"
+          activeClass="text-white"
           className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
         >
-          proof
+          builds
+        </Link>
+        <Link
+          to="why-me"
+          smooth={true}
+          offset={-100}
+          spy={true}
+          activeClass="text-white"
+          className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
+        >
+          why-me
         </Link>
       </div>
     </>
