@@ -149,7 +149,7 @@ const ProjectsSection = () => {
                 <h3 className="opacity-0 font-brand mt-1 group-hover:opacity-100 duration-1000 transition-opacity">
                   {item.title}
                 </h3>
-                <p className="opacity-0 leading-5 font-mono tracking-tight text-gray-400 group-hover:opacity-100 transition-opacity duration-1000">
+                <p className="opacity-0 leading-4.5 lg:leading-5 font-mono -tracking-widest  lg:tracking-tight text-gray-400 group-hover:opacity-100 transition-opacity duration-1000">
                   {item.description}
                 </p>
                 <div className="flex flex-row mt-2 gap-3">

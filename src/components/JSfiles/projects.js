@@ -7,7 +7,7 @@ export const PROJECTS = [
     title: "Typing Speed Analyzer",
     category: "Keystroke Analytics Engine",
     description:
-      "A high-precision performance tool engineered to evaluate real-time linguistic input. Developed with a focus on event-driven architecture, it processes keystroke data to calculate WPM and accuracy metrics.",
+      "A high-precision performance tool engineered to evaluate real-time input. Developed with a focus on event-driven architecture, it processes keystroke data to calculate WPM and accuracy metrics.",
     tech: ["React", "CSS", "HTML", "JS"],
     image: typingSpeedAnalyzer,
     dark: true,

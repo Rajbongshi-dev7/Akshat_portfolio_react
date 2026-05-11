@@ -24,14 +24,20 @@ const WhyMe = () => {
             transition={{ duration: 0.7 }}
             className="flex items-center gap-3 mb-4"
           >
-            <span className="h-px w-12 bg-[#00e5ff]" />
+            <span className="italic text-[#00e5ff]">04</span>
+            <span className="h-px w-8 bg-[#00e5ff]" />
             <span className="text-[#00e5ff] font-tech tracking-[0.2em] text-sm uppercase">
               Capability Report
             </span>
           </motion.div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">
+          <motion.h2
+            initial={{ opacity: 0, x: 150 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="text-4xl md:text-5xl font-bold text-white tracking-tight"
+          >
             Why Partner With Me<span className="text-[#00e5ff]">?</span>
-          </h2>
+          </motion.h2>
         </div>
 
         {/* The 3 Pillars Grid */}
