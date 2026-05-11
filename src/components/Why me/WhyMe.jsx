@@ -10,17 +10,18 @@ const WhyMe = () => {
   return (
     <section
       id="why-me"
-      className="relative py-24 bg-[#181b29] overflow-hidden"
+      className="relative w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-[#181b29] overflow-hidden"
     >
       {/* Background Ambient Glow */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-7xl mx-auto  relative z-10">
         {/* Section Header */}
         <div className="mb-16">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
             className="flex items-center gap-3 mb-4"
           >
             <span className="h-px w-12 bg-[#00e5ff]" />
