@@ -39,28 +39,31 @@ const ProjectsSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mb-16"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <span className="font-serif italic text-sm text-[#00e5ff]/60">
-              03
-            </span>
-            <div className="w-8 h-px bg-[#00e5ff]/40" />
-            <span className="text-[10px] tracking-[0.3em] font-tech uppercase text-gray-500">
+        <div className="mb-16">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex items-center gap-3 mb-4"
+          >
+            <span className="font-serif italic text-sm text-[#00e5ff]">03</span>
+            <div className="w-8 h-px bg-[#00e5ff]" />
+            <span className="text-xs tracking-[0.3em] font-tech uppercase text-[#00e5ff]">
               Case Studies
             </span>
-          </div>
-          <h2 className="text-4xl md:text-6xl font-black text-white font-brand">
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="text-4xl md:text-6xl font-black text-white font-brand"
+          >
             Digital{" "}
             <span className="font-mono italic font-normal text-[#00e5ff]">
               Environments
             </span>
-          </h2>
-        </motion.div>
+          </motion.h2>
+        </div>
 
         {/* THE HYBRID GRID */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -113,50 +116,31 @@ const ProjectsSection = () => {
             >
               <div
                 style={{ backgroundImage: `url(${item.image})` }}
-                className={`p-8 h-full absolute flex flex-col justify-baseline bg-no-repeat w-full bg-cover bg-center`}
+                className={`p-5 md:p-2 lg:p-4 xl:p-8 h-full text-right md:text-center lg:text-left absolute flex flex-col justify-baseline bg-no-repeat w-full bg-cover bg-center`}
               >
                 <div className=" mt-auto mb-1 ">
                   <h3
-                    className={`text-xl group-hover:opacity-0 transition-opacity duration-600 font-bold mb-3 ${item.dark ? "text-gray-50" : "text-black"}`}
+                    className={`text-xl  md:group-hover:opacity-0 transition-opacity duration-600 font-bold mb-3 ${item.dark ? "text-[#fcd52a]" : "text-black"}`}
                   >
                     {item.title}
                   </h3>
-                  <h4 className="text-fuchsia-500 ">
+                  <h4 className="text-fuchsia-500 md:grid   md:grid-rows-2 lg:block">
                     {item.tech.map((tech, index) => (
                       <span
                         key={index}
-                        className={`border px-2 py-0.5 border-black  bg-black text-cyan-400 group-hover:opacity-0 shadow drop-shadow-2xl mx-2 ml-0 transition-opacity duration-600 font-mono rounded-2xl`}
+                        className={`border px-2 py-0.5 border-black md:mb-2 text-center lg:mb-0  bg-black text-cyan-400 md:group-hover:opacity-0 shadow drop-shadow-2xl  ml-2 lg:mr-2 lg:ml-0 transition-opacity duration-600 font-mono rounded-2xl`}
                       >
                         {tech}
                       </span>
                     ))}
                   </h4>
                 </div>
-              </div>
-              <div
-                className={`relative w-full h-60 p-4 pt-2 text-white bg-[#060F27]  transition-all ease-in-out translate-y-4/2 border-t border-t-blue-400 group-hover:translate-y-1/3 duration-800`}
-              >
-                {/* <h4 className="opacity-0 group-hover:opacity-100 duration-1000  transition-opacity">
-                  {item.tech.map((tech, index) => (
-                    <span
-                      key={index}
-                      className=" text-black text-sm  mx-2 ml-0 px-2  py-0.5 bg-[#eefbc2]  shadow drop-shadow-xl font-mono rounded-2xl"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </h4> */}
-                <h3 className="opacity-0 font-brand mt-1 group-hover:opacity-100 duration-1000 transition-opacity">
-                  {item.title}
-                </h3>
-                <p className="opacity-0 hidden xl:block leading-4.5 lg:leading-5 font-mono -tracking-widest  lg:tracking-tight text-gray-400 group-hover:opacity-100 transition-opacity duration-1000">
-                  {item.description}
-                </p>
-                <div className="flex flex-row mt-2 gap-3">
+                {/* Projects link */}
+                <div className="flex flex-row justify-end md:hidden mt-2 gap-3">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="opacity-0 flex items-center group bg-[#eefbc2]  group-hover:opacity-100  px-2 py-0.5  shadow drop-shadow-2xl text-black hover:text-indigo-600 rounded-2xl uppercase text-sm font-tech tracking-tight transition-opacity"
+                    className=" flex items-center group bg-[#eefbc2] px-2 py-0.5  shadow drop-shadow-2xl text-indigo-600 rounded-2xl uppercase text-xs font-tech tracking-tight"
                     href={item.link}
                   >
                     Live Preview
@@ -167,7 +151,42 @@ const ProjectsSection = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="opacity-0 flex items-center group bg-[#eefbc2] group-hover:opacity-100 px-2 py-0.5 shadow drop-shadow-2xl rounded-2xl uppercase text-black hover:text-indigo-600 text-sm font-tech tracking-tight transition-opacity"
+                    className=" flex items-center group bg-[#eefbc2] px-2 py-0.5 shadow drop-shadow-2xl rounded-2xl uppercase text-indigo-600 text-xs font-tech tracking-tight"
+                    href={item.github}
+                  >
+                    Github
+                    <span className="ml-1">
+                      <MdArrowOutward className=" group-hover:text-red-800" />
+                    </span>
+                  </a>
+                </div>
+              </div>
+              {/* animation div */}
+              <div
+                className={`relative w-full hidden md:block h-60 p-2 lg:p-4 pt-2 text-white bg-[#060F27]  transition-all ease-in-out translate-y-4/2 border-t border-t-blue-400 group-hover:translate-y-3/4 xl:group-hover:translate-y-1/4 duration-800`}
+              >
+                <h3 className="opacity-0 font-brand mt-1 mb-4 lg:mb-0 group-hover:opacity-100 duration-1000 transition-opacity">
+                  {item.title}
+                </h3>
+                <p className="opacity-0 hidden xl:block leading-4.5 lg:leading-5 font-mono tracking-tighter  lg:tracking-tight xl:mb-4 text-gray-400 group-hover:opacity-100 transition-opacity duration-1000">
+                  {item.description}
+                </p>
+                <div className="flex flex-row mt-2 gap-3">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-0 flex items-center group bg-[#eefbc2]  group-hover:opacity-100  px-2 py-0.5  shadow drop-shadow-2xl text-black hover:text-indigo-600 rounded-2xl uppercase text-xs xl:text-sm font-tech tracking-tight transition-opacity"
+                    href={item.link}
+                  >
+                    Live Preview
+                    <span className="ml-1">
+                      <MdArrowOutward className=" group-hover:text-red-800" />
+                    </span>
+                  </a>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="opacity-0 flex items-center group bg-[#eefbc2] group-hover:opacity-100 px-2 py-0.5 shadow drop-shadow-2xl rounded-2xl uppercase text-black hover:text-indigo-600 text-xs xl:text-sm font-tech tracking-tight transition-opacity"
                     href={item.github}
                   >
                     Github

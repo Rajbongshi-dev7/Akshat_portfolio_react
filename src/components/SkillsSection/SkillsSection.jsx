@@ -32,30 +32,32 @@ const SkillSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* SECTION LABEL */}
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          variants={item}
-          className="mb-12"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <span className="font-serif italic text-sm text-[#00e5ff]/60">
-              02
-            </span>
-            <div className="w-8 h-px bg-[#00e5ff]/40" />
-            <span className="text-[10px] tracking-[0.3em] font-tech uppercase text-gray-500">
+        <div className="mb-12">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="flex items-center gap-3 mb-4"
+          >
+            <span className="font-serif italic text-sm text-[#00e5ff]">02</span>
+            <div className="w-8 h-px bg-[#00e5ff]" />
+            <span className="text-xs tracking-[0.3em] font-tech uppercase text-[#00e5ff]">
               The Arsenal
             </span>
-          </div>
-          <h2 className="text-4xl md:text-6xl font-black text-white font-brand leading-none">
+          </motion.div>
+          <motion.h2
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="text-4xl md:text-6xl font-black text-white font-brand leading-none"
+          >
             Tools I wield with
             <br />
             <span className="font-mono italic font-normal text-[#00e5ff]">
               precision
             </span>
-          </h2>
-        </motion.div>
+          </motion.h2>
+        </div>
 
         {/* BENTO GRID */}
         <motion.div
