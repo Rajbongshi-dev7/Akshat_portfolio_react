@@ -20,7 +20,7 @@ export const PROJECTS = [
     title: "Weather App",
     category: "Real-time Data Interface",
     description:
-      "A high-performance weather environment engineered with Vanilla JavaScript and CSS3. This project focuses on the precise synchronization of asynchronous API streams and dynamic DOM manipulation.",
+      "A high-performance weather environment engineered with Vanilla JavaScript and CSS3.This project focuses on the precise synchronization of asynchronous API streams and dynamic DOM manipulation.",
     tech: ["JS", "CSS", "HTML"],
     image: weatherApp,
     dark: true,
