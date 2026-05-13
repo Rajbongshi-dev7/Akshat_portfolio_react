@@ -17,7 +17,7 @@ const WhyMe = () => {
 
       <div className="max-w-7xl mx-auto  relative z-10">
         {/* Section Header */}
-        <div className="mb-16">
+        <div className="mb-16 overflow-hidden">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}

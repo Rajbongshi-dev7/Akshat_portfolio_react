@@ -34,7 +34,7 @@ const SkillSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* SECTION LABEL */}
-        <div className="mb-12">
+        <div className="mb-12 overflow-hidden">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}

@@ -39,7 +39,7 @@ const ProjectsSection = () => {
     >
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
-        <div className="mb-16">
+        <div className="mb-16 overflow-hidden">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -66,7 +66,7 @@ const ProjectsSection = () => {
         </div>
 
         {/* THE HYBRID GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-12 overflow-hidden gap-6">
           {/* 1. FEATURED (65% - Slides from Left) */}
           <motion.div
             variants={leftSlide}

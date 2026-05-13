@@ -29,7 +29,7 @@ const MobileMenu = () => {
         <Link
           to="builds"
           smooth={true}
-          offset={-50}
+          offset={-30}
           spy={true}
           activeClass="text-white"
           className="font-tech text-[10px] uppercase tracking-widest text-gray-400"
@@ -39,7 +39,7 @@ const MobileMenu = () => {
         <Link
           to="why-me"
           smooth={true}
-          offset={-100}
+          offset={-30}
           spy={true}
           activeClass="text-white"
           className="font-tech text-[10px] uppercase tracking-widest text-gray-400"

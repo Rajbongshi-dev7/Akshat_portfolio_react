@@ -9,7 +9,7 @@ const About = () => {
       transition: { duration: 0.7, ease: [0.23, 1, 0.32, 1] },
     },
   };
-
+  const isDesktop = typeof window !== "undefined" && window.innerWidth >= 768;
   return (
     <section
       id="about"
@@ -35,7 +35,7 @@ const About = () => {
             transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
-              scale: 1.02,
+              scale: isDesktop ? 1.02 : 1,
               transition: { duration: 0.5, ease: "easeOut" },
             }}
             viewport={{ once: true }}
@@ -114,7 +114,7 @@ const About = () => {
             transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
-              scale: 1.02,
+              scale: isDesktop ? 1.02 : 1,
               transition: { duration: 0.5, ease: "easeOut" },
             }}
             viewport={{ once: true }}
@@ -149,7 +149,7 @@ const About = () => {
             transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
-              scale: 1.02,
+              scale: isDesktop ? 1.02 : 1,
               transition: { duration: 0.5, ease: "easeOut" },
             }}
             viewport={{ once: true }}
@@ -172,7 +172,7 @@ const About = () => {
             transition={{ duration: 0.5, ease: "easeIn" }}
             whileHover={{
               y: -10,
-              scale: 1.02,
+              scale: isDesktop ? 1.02 : 1,
               transition: { duration: 0.5, ease: "easeOut" },
             }}
             viewport={{ once: true }}
