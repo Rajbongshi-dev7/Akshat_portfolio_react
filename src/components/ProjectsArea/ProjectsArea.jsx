@@ -4,9 +4,16 @@ import { PROJECTS } from "../JSfiles/projects";
 import { MdArrowOutward } from "react-icons/md";
 
 const ProjectsSection = () => {
+  const [isDesktop, setIsDesktop] = React.useState(window.innerWidth < 992);
+
+  React.useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth < 992);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   // Animation Variants
   const leftSlide = {
-    hidden: { x: -300, opacity: 0 },
+    hidden: { x: isDesktop ? -200 : -300, opacity: 0 },
     show: {
       x: 0,
       opacity: 1,
@@ -15,7 +22,7 @@ const ProjectsSection = () => {
   };
 
   const rightSlide = {
-    hidden: { x: 300, opacity: 0 },
+    hidden: { x: isDesktop ? 200 : 300, opacity: 0 },
     show: {
       x: 0,
       opacity: 1,

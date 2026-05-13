@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import React from "react";
 
 const About = () => {
   const item = {
@@ -9,7 +10,13 @@ const About = () => {
       transition: { duration: 0.7, ease: [0.23, 1, 0.32, 1] },
     },
   };
-  const isDesktop = typeof window !== "undefined" && window.innerWidth >= 768;
+  const [isDesktop, setIsDesktop] = React.useState(window.innerWidth >= 768);
+
+  React.useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <section
       id="about"
