@@ -120,7 +120,7 @@ const ProjectsSection = () => {
               >
                 <div className=" mt-auto mb-1 ">
                   <h3
-                    className={`text-xl  md:group-hover:opacity-0 transition-opacity duration-600 font-bold mb-3 ${item.dark ? "text-[#fcd52a]" : "text-black"}`}
+                    className={`text-xl  md:group-hover:opacity-0 transition-opacity duration-600 font-bold mb-3 ${item.dark ? "text-[#fcd52a]" : "text-[#ffffff]"}`}
                   >
                     {item.title}
                   </h3>

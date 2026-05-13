@@ -10,7 +10,7 @@ export const PROJECTS = [
       "A high-precision performance tool engineered to evaluate real-time input. Developed with a focus on event-driven architecture, it processes keystroke data to calculate WPM and accuracy metrics.",
     tech: ["React", "CSS", "HTML", "JS"],
     image: typingSpeedAnalyzer,
-    dark: true,
+    dark: false,
     github:
       "https://github.com/Rajbongshi-dev7/typing-speed-analyzer_react-version",
     link: "https://typing-speed-analyzer-fawn.vercel.app/",
@@ -35,7 +35,7 @@ export const PROJECTS = [
       "A sleek, responsive restaurant landing page built with vanilla HTML, CSS, and JavaScript, featuring smooth navigation and optimized layouts for modern digital menus and a premium user experience.",
     tech: ["HTML", "CSS", "JS"],
     image: restraurant,
-    dark: true,
+    dark: false,
     github: "https://github.com/Rajbongshi-dev7/Restraurant",
     link: "https://restraurant-omega.vercel.app/",
   },

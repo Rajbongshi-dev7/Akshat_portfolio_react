@@ -6,7 +6,9 @@ import { SKILLS } from "../JSfiles/skills";
 const Icon = {
   react: <FaReact color="#00FFFF" />,
 };
-
+// This checks if the screen is mobile (less than 768px)
+const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+const responsiveRadius = isMobile ? 32 : 38; // 28 for mobile, 38 for desktop
 const SkillSection = () => {
   const container = {
     hidden: { opacity: 0 },
@@ -78,16 +80,16 @@ const SkillSection = () => {
                 className={`${skill.wide ? "md:col-span-2" : "md:col-span-1"} group relative overflow-hidden rounded-[22px] border border-white/5 bg-white/3 backdrop-blur-xl p-6 transition-colors hover:bg-white/5`}
               >
                 <div
-                  className={`flex ${skill.wide ? "flex-row items-center gap-6" : "flex-col items-start gap-4"} h-full`}
+                  className={`flex ${skill.wide ? "flex-row items-center gap-6" : "flex-row items-center md:flex-col md:items-start gap-4"} h-full`}
                 >
                   {/* CIRCULAR PROGRESS */}
                   <div className="relative shrink-0">
-                    <svg className="w-20 h-20 md:w-24 md:h-24 -rotate-90 overflow-visible">
+                    <svg className="w-18 h-18 md:w-20 md:h-20 lg:w-24 lg:h-24 -rotate-90 overflow-visible">
                       {/* 1. THE TRACK */}
                       <circle
                         cx="50%"
                         cy="50%"
-                        r="38"
+                        r={responsiveRadius}
                         fill="none"
                         className="stroke-white/5"
                         strokeWidth="4"
@@ -97,7 +99,7 @@ const SkillSection = () => {
                       <motion.circle
                         cx="50%"
                         cy="50%"
-                        r="38"
+                        r={responsiveRadius}
                         fill="none"
                         stroke={skill.color}
                         strokeWidth="8" // Make this wide so the blur spreads out
@@ -122,10 +124,10 @@ const SkillSection = () => {
                       <motion.circle
                         cx="50%"
                         cy="50%"
-                        r="38"
+                        r={responsiveRadius}
                         fill="none"
                         stroke={skill.color}
-                        className="stroke-2 md:stroke-8" // Keep the core sharp and thin
+                        className="stroke-2 md:stroke-2 lg:stroke-8" // Keep the core sharp and thin
                         strokeLinecap="round"
                         initial={{ pathLength: 0 }}
                         whileInView={{ pathLength: skill.pct / 100 }}
