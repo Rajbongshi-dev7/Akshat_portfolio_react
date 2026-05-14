@@ -13,14 +13,14 @@ A high-performance, bento-style digital portfolio designed to showcase component
 This project serves as a technical laboratory for the following technologies:
 
 - **Core:** React.js + Vite
-- **Styling:** Tailwind CSS (Utility-first architecture)
+- **Styling:** Tailwind CSS (Utility-first architecture) & Framer motion
 - **Deployment:** Vercel
 
 ## 🏗️ Architectural Features
 
-- **Bento Grid Layout:** Immersive, modular UI inspired by modern dashboard aesthetics.
+- **Grid Layout:** Immersive, modular UI inspired by modern dashboard aesthetics.
 - **Micro-interactions:** Fine-tuned hover states and transitions for a "tactile" digital experience.
-- **Fully Responsive:** Fluid layouts designed for "indestructible" mobile and desktop performance.
+- **Fully Responsive:** Fluid layouts designed for "indestructible" mobile and desktop performance.(Mobile First)
 - **Optimized Assets:** Using SVG iconography for infinite scalability and minimal load times.
 
 ## 🚀 Getting Started

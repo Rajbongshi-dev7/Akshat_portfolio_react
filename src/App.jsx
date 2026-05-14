@@ -9,6 +9,7 @@ import About from "./components/About/About";
 import SkillsSection from "./components/SkillsSection/SkillsSection";
 import WhyMe from "./components/Why me/WhyMe";
 import Process from "./components/WorkProces/Process";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
       <ProjectsArea />
       <WhyMe />
       <Process />
+      <Footer />
       <MobileMenu />
     </>
   );
