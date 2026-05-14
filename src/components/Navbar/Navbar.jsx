@@ -74,9 +74,12 @@ const Navbar = () => {
             </div>
 
             {/* Call to Action */}
-            <button className="bg-[#00aeff] border-none text-black px-1 py-1 md:px-1 md:py-0.5 lg:px-2  rounded-full font-body text-xs md:text-sm lg:text-lg cursor-pointer font-medium hover:bg-blue-600 hover:text-white transition-all duration-300 w-18 md:w-20 md:h-8 lg:w-24">
+            <a
+              href="mailto:doyalrajbs7@gmail.com?subject=Initiate Build: Project Inquiry"
+              className="bg-[#00aeff] border-none text-black px-1 py-1 md:px-1 md:py-0.5 lg:px-2  rounded-full font-body text-xs md:text-sm lg:text-lg cursor-pointer font-medium hover:bg-blue-600 hover:text-white transition-all duration-300 w-18 md:w-20 md:h-8 lg:w-24"
+            >
               Connect
-            </button>
+            </a>
           </div>
         </div>
       </nav>
