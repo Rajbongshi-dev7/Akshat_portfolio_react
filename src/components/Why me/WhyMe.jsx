@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import { Link } from "react-scroll";
 const WhyMe = () => {
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -175,6 +175,57 @@ const WhyMe = () => {
             "I don't just build websites; I engineer digital assets that work
             for your business 24/7."
           </div>
+        </motion.div>
+      </div>
+      {/* Transition to Process */}
+      <div className="flex flex-col items-center justify-center mt-20 pb-10">
+        {/* The "Glow" line connecting the sections */}
+        <motion.div
+          initial={{ height: 0 }}
+          whileInView={{ height: 100 }}
+          viewport={{ once: true }}
+          className="w-px bg-linear-to-b from-[#00e5ff] to-transparent mb-8"
+        />
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="text-center"
+        >
+          <p className="text-gray-500 font-tech text-[10px] tracking-[0.3em] mb-6 uppercase">
+            Next Phase
+          </p>
+
+          <Link
+            to="process"
+            smooth={true}
+            offset={-50}
+            duration={800}
+            className="group relative px-8 py-4 flex items-center gap-4 cursor-pointer"
+          >
+            {/* Button Background with Hover Effect */}
+            <div className="absolute inset-0 bg-white/2 border border-white/10 rounded-full group-hover:border-[#00e5ff]/50 group-hover:bg-[#00e5ff]/5 transition-all duration-500" />
+
+            <span className="relative font-tech text-sm text-white tracking-widest group-hover:text-[#00e5ff] transition-colors">
+              SEE_MY_WORKFLOW
+            </span>
+
+            <div className="relative flex items-center justify-center w-6 h-6 rounded-full bg-white/5 group-hover:bg-[#00e5ff] transition-all duration-500">
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="3"
+                className="text-white group-hover:text-black transition-colors"
+              >
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5" />
+              </svg>
+            </div>
+          </Link>
         </motion.div>
       </div>
     </section>

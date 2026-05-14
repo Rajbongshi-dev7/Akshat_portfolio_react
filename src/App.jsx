@@ -8,6 +8,7 @@ import StatusRibbon from "./components/StatusRibbon/StatusRibbon";
 import About from "./components/About/About";
 import SkillsSection from "./components/SkillsSection/SkillsSection";
 import WhyMe from "./components/Why me/WhyMe";
+import Process from "./components/WorkProces/Process";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
       <SkillsSection />
       <ProjectsArea />
       <WhyMe />
+      <Process />
       <MobileMenu />
     </>
   );
