@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Link } from "react-scroll";
+import { li } from "framer-motion/client";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -73,8 +75,8 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* SKILLS MARQUEE (Static Version) */}
-        <div className="relative flex overflow-hidden py-8 bg-[#fcfcfc] border-y border-gray-100">
+        {/* SKILLS MARQUEE  */}
+        <div className="relative flex overflow-hidden py-8 bg-transparent border-y border-gray-100">
           <div className="flex whitespace-nowrap">
             <motion.div
               animate={{ x: ["0%", "-100%"] }}
@@ -147,12 +149,18 @@ const Footer = () => {
               Navigate
             </h4>
             <ul className="space-y-4 text-gray-500 text-sm font-medium">
-              {["About", "Projects", "Why me", "Contact"].map((item) => (
-                <li
-                  key={item}
-                  className="hover:text-indigo-500 transition-colors cursor-pointer"
-                >
-                  {item}
+              {["About", "Skills", "Builds", "Why-me"].map((item) => (
+                <li>
+                  <Link
+                    to={item.toLowerCase()}
+                    smooth={true}
+                    spy={true}
+                    offset={-200}
+                    key={item}
+                    className="hover:text-indigo-500 transition-colors cursor-pointer"
+                  >
+                    {item}
+                  </Link>
                 </li>
               ))}
             </ul>
