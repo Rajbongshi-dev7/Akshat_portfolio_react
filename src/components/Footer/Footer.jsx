@@ -80,7 +80,7 @@ const Footer = () => {
           </p>
           <div className="flex gap-6">
             <span className="text-[10px] font-tech text-gray-700">
-              40.7128° N, 74.0060° W
+              24°23'27.7" N, 89°59'21.9"E
             </span>
             <span className="text-[10px] font-tech text-gray-700">
               V.2.0.26

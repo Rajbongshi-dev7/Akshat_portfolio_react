@@ -4,8 +4,11 @@ import { steps } from "../JSfiles/process";
 
 const Process = () => {
   return (
-    <section id="process" className="py-24 bg-black relative overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6">
+    <section
+      id="process"
+      className="w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-black relative overflow-hidden"
+    >
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -21,7 +24,7 @@ const Process = () => {
 
         <div className="relative">
           {/* The Vertical Git Line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-[#00e5ff] via-blue-500/20 to-transparent" />
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-linear-to-b from-[#00e5ff] via-blue-500/50 to-transparent" />
 
           {steps.map((step, index) => (
             <motion.div
