@@ -1,91 +1,214 @@
 import React from "react";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { FiArrowUpRight } from "react-icons/fi";
+import { FaTwitter, FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const tags = [
+    "React",
+    "JavaScript",
+    "Tailwind",
+    "CSS3",
+    "HTML5",
+    "Mobile-First",
+    "Open to Work",
+    "Lighthouse 95+",
+  ];
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
 
+  useEffect(() => {
+    // This creates a "timer" that runs every 1000ms (1 second)
+    const timer = setInterval(() => {
+      // It updates the state, which forces React to "re-render" the text
+      setTime(
+        new Date().toLocaleTimeString([], {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
+        }),
+      );
+    }, 1000);
+
+    // This cleans up the timer if you leave the page (prevents memory leaks)
+    return () => clearInterval(timer);
+  }, []);
   return (
-    <footer className="pt-20 pb-10 bg-black border-t border-white/5 relative overflow-hidden">
-      {/* Subtle Background Glow */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-125 h-50 bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
-
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end mb-20">
-          {/* Left Side: Status & Tagline */}
-          <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-              </div>
-              <span className="font-tech text-xs tracking-[0.2em] text-gray-400 uppercase">
-                System_Status: Available_for_Work
-              </span>
-            </div>
-
-            <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              Let's build the <br />
-              <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-[#00e5ff]">
-                next big thing.
-              </span>
-            </h2>
+    <footer className="bg-[#070613] pt-24 pb-12 px-6 border-t border-gray-100 font-sans">
+      <div className="max-w-7xl mx-auto">
+        {/* TOP SECTION: Status & Location */}
+        <div className="flex justify-between items-center mb-20 text-[11px] font-medium uppercase tracking-[0.2em] text-gray-400">
+          <div className="flex items-center gap-3 border border-gray-100 py-2 px-4 rounded-full">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+            </span>
+            <span>Available for projects — June 2026</span>
           </div>
-
-          {/* Right Side: Links */}
-          <div className="flex flex-col items-start md:items-end gap-6">
-            <a
-              href="mailto:doyalrajbs7@gmail.com"
-              className="group flex items-center gap-4 text-xl text-white font-tech hover:text-[#00e5ff] transition-all"
-            >
-              <span>HIRE_ME</span>
-              <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#00e5ff]/50 group-hover:bg-[#00e5ff]/5 transition-all">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"
-                >
-                  <path d="M7 17L17 7M17 7H7M17 7V17" />
-                </svg>
-              </div>
-            </a>
-
-            <div className="flex gap-8 mt-4">
-              {[
-                { label: "GitHub", url: "https://github.com/Rajbongshi-dev7" },
-                { label: "LinkedIn", url: "#" }, // Update these later
-                { label: "Twitter", url: "#" },
-                { label: "CV", url: "#" },
-              ].map((social) => (
-                <a
-                  key={social.label}
-                  href={social.url}
-                  target={social.url.startsWith("http") ? "_blank" : "_self"}
-                  rel="noopener noreferrer"
-                  className="text-gray-500 text-xs font-tech uppercase tracking-widest hover:text-white transition-colors"
-                >
-                  {social.label}
-                </a>
-              ))}
-            </div>
+          <div className="flex items-center gap-2">
+            <span>Dhaka</span>
+            <span className="text-gray-200">•</span>
+            <span>{time}</span>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="pt-10 border-t border-white/5 flex flex-col md:row justify-between items-center gap-6">
-          <p className="text-[10px] font-tech text-gray-600 tracking-widest uppercase">
-            Designed & Engineered by Akshat // {currentYear}
-          </p>
-          <div className="flex gap-6">
-            <span className="text-[10px] font-tech text-gray-700">
-              24°23'27.7" N, 89°59'21.9"E
-            </span>
-            <span className="text-[10px] font-tech text-gray-700">
-              V.2.0.26
-            </span>
+        {/* MIDDLE SECTION: Big CTA */}
+        <div className="relative mb-32">
+          <h2 className="text-[12vw] md:text-[8vw] font-bold leading-[0.9] tracking-tighter text-gray-900 opacity-5">
+            Let's build <br /> something.
+          </h2>
+          <div className="md:absolute md:top-1/2 md:right-20 md:-translate-y-1/2 mt-8 md:mt-0">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="w-20 h-20 bg-indigo-500 rounded-full flex items-center justify-center text-white cursor-pointer shadow-xl shadow-indigo-200"
+            >
+              <FiArrowUpRight strokeWidth={1.5} />
+            </motion.div>
           </div>
+          <p className="max-w-md mt-10 text-gray-400 text-lg leading-relaxed">
+            Front-end developer focused on performance, clean code, and
+            interfaces that actually feel good to use. Open to freelance
+            projects and collaborations.
+          </p>
+        </div>
+
+        {/* SKILLS MARQUEE (Static Version) */}
+        <div className="relative flex overflow-hidden py-8 bg-[#fcfcfc] border-y border-gray-100">
+          <div className="flex whitespace-nowrap">
+            <motion.div
+              animate={{ x: ["0%", "-100%"] }}
+              transition={{
+                duration: 35, // Adjust speed here
+                ease: "linear",
+                repeat: Infinity,
+              }}
+              className="flex gap-12 pr-12 items-center"
+            >
+              {tags.map((tag, index) => (
+                <div key={index} className="flex items-center gap-12">
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                    {tag}
+                  </span>
+                  <span className="text-indigo-400 text-lg">✦</span>
+                </div>
+              ))}
+            </motion.div>
+
+            {/* Second identical div for the seamless loop */}
+            <motion.div
+              animate={{ x: ["0%", "-100%"] }}
+              transition={{
+                duration: 35, // Must be the same duration as the first
+                ease: "linear",
+                repeat: Infinity,
+              }}
+              className="flex gap-12 pr-12 items-center"
+            >
+              {tags.map((tag, index) => (
+                <div key={index} className="flex items-center gap-12">
+                  <span className="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-400">
+                    {tag}
+                  </span>
+                  <span className="text-indigo-400 text-lg">✦</span>
+                </div>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+
+        {/* NAVIGATION & CONNECT */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-24 border-b border-gray-50 pb-20">
+          <div>
+            <h4 className="text-[10px] font-bold text-gray-300 uppercase tracking-[0.3em] mb-8">
+              About
+            </h4>
+            <p className="text-gray-400 text-sm leading-relaxed mb-6">
+              A self-taught front-end developer from Dhaka building fast,
+              accessible, and beautifully crafted web experiences. Every project
+              gets my full attention.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {["React", "JavaScript", "Tailwind", "CSS3", "HTML5"].map(
+                (tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 border border-gray-200 text-[10px] rounded text-gray-500 font-medium"
+                  >
+                    {tag}
+                  </span>
+                ),
+              )}
+            </div>
+          </div>
+
+          <div className="md:pl-20">
+            <h4 className="text-[10px] font-bold text-gray-300 uppercase tracking-[0.3em] mb-8">
+              Navigate
+            </h4>
+            <ul className="space-y-4 text-gray-500 text-sm font-medium">
+              {["About", "Projects", "Why me", "Contact"].map((item) => (
+                <li
+                  key={item}
+                  className="hover:text-indigo-500 transition-colors cursor-pointer"
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-[10px] font-bold text-gray-300 uppercase tracking-[0.3em] mb-8">
+              Connect
+            </h4>
+            <ul className="space-y-4">
+              {[
+                {
+                  name: "GitHub",
+                  icon: <FaGithub size={16} />,
+                  url: "https://github.com/Rajbongshi-dev7",
+                },
+                { name: "LinkedIn", icon: <FaLinkedin size={16} />, url: "#" },
+                {
+                  name: "Twitter / X",
+                  icon: <FaTwitter size={16} />,
+                  url: "#",
+                },
+                {
+                  name: "hello@you.dev",
+                  icon: <FaEnvelope size={16} />,
+                  url: "mailto:hello@you.dev",
+                },
+              ].map((link) => (
+                <li key={link.name}>
+                  <a
+                    href={link.url}
+                    className="flex items-center gap-3 text-gray-500 text-sm hover:text-indigo-500 transition-colors"
+                  >
+                    <span className="text-gray-300">{link.icon}</span>
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* COPYRIGHT BOTTOM BAR */}
+        <div className="flex flex-col md:row justify-between items-center text-[10px] font-medium text-gray-400 tracking-widest uppercase">
+          <p>
+            © {currentYear} <span className="text-gray-900">Your Name</span> —
+            All rights reserved
+          </p>
+          <div className="flex items-center gap-2 border border-gray-100 py-2 px-4 rounded-full">
+            <span className="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+            <span>Lighthouse 99+ guaranteed</span>
+          </div>
+          <p className="flex items-center gap-1">
+            Built with <span className="text-red-400 font-serif">❤️</span> in
+            Dhaka, BD
+          </p>
         </div>
       </div>
     </footer>
