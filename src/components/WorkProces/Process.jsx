@@ -6,7 +6,7 @@ const Process = () => {
   return (
     <section
       id="process"
-      className="w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-black relative overflow-hidden"
+      className="w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-[#0D1117] relative overflow-hidden"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
