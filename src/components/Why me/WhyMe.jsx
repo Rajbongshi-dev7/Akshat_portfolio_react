@@ -13,7 +13,7 @@ const WhyMe = () => {
       className="relative w-full px-6 sm:px-16 md:px-24 lg:px-30 mx-auto py-24 bg-[#181b29] overflow-hidden"
     >
       {/* Background Ambient Glow */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full" />
+      <div className="absolute top-0 left-1/4 w-2/6 h-2/6 bg-blue-500/10 blur-[120px] rounded-full" />
 
       <div className="max-w-7xl mx-auto  relative z-10">
         {/* Section Header */}
